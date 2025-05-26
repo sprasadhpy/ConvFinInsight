@@ -563,6 +563,38 @@ Answer:
 
 </section>
 </div>
+<div class="container">
+  <section>
+    <h2>Experiment 6: Qwen-14B Evaluation : Modest Gains with Calculator Augmentation but at a Cost</h2>
+
+    <p>
+      In this experiment we evaluated the performance of the Qwen-14B model loaded via Unsloth in 4-bit precision on 50 financial QA samples from the ConvFinQA dataset. The LLM-only variant of Qwen achieved an accuracy of <strong>36.0%</strong> while the <strong>Qwen + Calculator</strong> configuration improved to <strong>48.0%</strong> this way  indicating meaningful gains through structured reasoning using <code>&lt;MATH&gt;</code> and <code>&lt;ANSWER&gt;</code> tags.
+       However, unlike other models evaluated Qwen exhibited <strong>verbose and latency-prone behavior</strong>, often producing unnecessarily long outputs and taking significantly more time per question. This behavior is consistent with the characteristics noted in GRPO (Group Relative Proxy Optimization) training. As confirmed in 
+      <a href="https://arxiv.org/abs/2504.11343" target="_blank">arXiv:2504.11343</a>, while GRPO enhances reasoning quality it can inadvertently encourage models to generate <em>longer, more elaborate outputs</em> due to optimization over step-by-step solution paths.
+    </p>
+
+    <p>
+      Due to these runtime and verbosity concerns we limited our evaluation to <strong>50 samples</strong>. It is worth noting that a larger sample size may yield a more stable estimate and potentially higher accuracy as reasoning patterns generalize better across diverse question types. While calculator scaffolding did improve factual accuracy the tradeoff in response time and verbosity could hinder deployment in latency-sensitive applications. Further fine-tuning or constraint-based decoding strategies may be required to streamline Qwen’s reasoning for production use.
+    </p>
+
+    <p>
+      <strong>Download the results:</strong> 
+      <a href="qwen_method_comparison_results.csv" download>
+        <code>qwen_method_comparison_results.csv</code>
+      </a>
+    </p>
+
+ 
+    <h2>Figure 6: Accuracy Comparison  Including Qwen Variants</h2>
+    <p>
+      The chart below visualizes performance across all evaluated strategies, now extended with Qwen-14B (LLM-only and Calculator) results. Despite modest accuracy, Qwen's output verbosity and latency highlight important tradeoffs introduced by GRPOstyle training.
+    </p>
+    <img src="Experiment6.png" alt="Qwen Accuracy Comparison Graph"
+         style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; padding: 4px;">
+  </section>
+</div>
+
+    
     <section class="demo">
         <div class="container">
             <h2>Try ConvFinBot</h2>
