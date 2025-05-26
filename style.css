@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Hero Section (black background only for header) */
+/* Hero Section (black only for header) */
 .hero {
     background-color: #000000;
     padding: 40px 0;
@@ -24,24 +24,34 @@ body {
     margin-bottom: 20px;
 }
 
-/* Default container */
+/* Generic container (no background!) */
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    color: inherit;
     background-color: transparent;
-    color: #333;
     border-radius: 8px;
 }
 
-/* About section */
+/* About section - white/light background */
 .about {
     padding: 40px 0;
     background-color: #ecf0f1;
+    color: #333;
 }
 
-.about h2 {
+/* Demo section - white/light background */
+.demo {
+    padding: 40px 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Text styles */
+.about h2, .demo h2 {
     font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .about ul {
@@ -53,20 +63,7 @@ body {
     font-size: 18px;
 }
 
-/* Demo section */
-.demo {
-    padding: 40px 0;
-    background-color: #fefefe;
-}
-
-.demo h2 {
-    font-size: 24px;
-}
-
-.demo p {
-    font-size: 16px;
-}
-
+/* Button style */
 .demo button {
     background-color: #3498db;
     color: white;
@@ -81,7 +78,7 @@ body {
     background-color: #2980b9;
 }
 
-/* Footer section */
+/* Footer style */
 footer {
     background-color: #34495e;
     color: #fff;
