@@ -225,17 +225,16 @@
     <p style="font-size: 14px; color: #666; margin-top: 8px;">
       This visualization summarizes question reasoning types, operator usage, company/year coverage, frequent answer units, and top-mentioned companies in the ConvFinQA dataset.
     </p>
-  </div>
-
-  <p> This comprehensive dataset diagnostic provides a multi-faceted view of the <strong>ConvFinQA corpus</strong> shedding light on structural and semantic patterns that influence multi-agent reasoning performance. As seen in <strong>Panel 1</strong> the question type distribution is heavily skewed towards percentage/ratio-based queries indicating a strong reliance on relative financial comparisons. 
+      <p> This comprehensive dataset diagnostic provides a multi-faceted view of the <strong>ConvFinQA corpus</strong> shedding light on structural and semantic patterns that influence multi-agent reasoning performance. As seen in <strong>Panel 1</strong> the question type distribution is heavily skewed towards percentage/ratio-based queries indicating a strong reliance on relative financial comparisons. 
       <strong>Panel 2</strong> shows that a few dominant operators like <em>divide</em>, <em>add</em>, and <em>subtract</em> account for the majority of program logic and thereby suggesting limited symbolic diversity.
       <strong>Panel 3</strong>’s heatmap reveals sparse and uneven company-year coverage, which may introduce temporal and entity-specific biases into learned representations. 
       <strong>Panel 4</strong> highlights that the most common answer unit is the percentage symbol (<code>%</code>) reinforcing the dominance of growth rate or ratio questions. Finally <strong>Panel 5</strong> surfaces the top 10 companies by mention frequency with <em>ETR</em> and <em>UNP</em> standing out pointing toward entity-level imbalances that may affect agent generalization.
+       <p>
+      These insights are critical for designing robust <strong>agentic reasoning systems</strong> especially with those leveraging retrieval, planning, and tool-augmented modules.
     </p>
-
-    <p>
-      These insights are critical for designing robust <strong>agentic reasoning systems</strong>, especially those leveraging retrieval, planning, or tool-augmented modules.
-    </p>
+      </p>
+  </div>
+   
 </section>
 
     <section class="model-summary">
