@@ -77,27 +77,27 @@
 
             <h3>Pre-Text (Excerpt)</h3>
             <pre>
-- 26 | 2009 annual report in fiscal 2008, revenues in the credit union systems and services business segment increased 14% from fiscal 2007.
-- All revenue components within the segment experienced growth during fiscal 2008.
-- License revenue generated the largest dollar growth in revenue as Episys AE, our flagship core processing system aimed at larger credit unions, experienced strong sales throughout the year.
-- Support and service revenue, the largest component of total revenues for the credit union segment, experienced 34% growth in EFT support and 10% growth in in-house support.
-- Gross profit in this segment increased $9,344 in fiscal 2008 compared to fiscal 2007, due primarily to increased license revenue, which carries the highest margins.
-            </pre>
-
-            <h3>Post-Text (Excerpt)</h3>
-            <pre>
-- Year ended June 30: cash provided by operations increased $25,587 to $206,588 for the fiscal year ended June 30, 2009, compared to $181,001 in 2008.
-- This increase is primarily due to a decrease in receivables of $21,214.
-- Early software maintenance billing in fiscal 2010 led to higher cash collection before year-end.
-- More cash was collected for revenue to be recognized in subsequent periods than in fiscal 2008.
-- Cash used in investing activities for fiscal year 2009 was $59,227, including $3,027 in contingent consideration paid on prior acquisitions.
+            - 26 | 2009 annual report in fiscal 2008, revenues in the credit union systems and services business segment increased 14% from fiscal 2007.
+            - All revenue components within the segment experienced growth during fiscal 2008.
+            - License revenue generated the largest dollar growth in revenue as Episys AE, our flagship core processing system aimed at larger credit unions, experienced strong sales throughout the year.
+            - Support and service revenue, the largest component of total revenues for the credit union segment, experienced 34% growth in EFT support and 10% growth in in-house support.
+            - Gross profit in this segment increased $9,344 in fiscal 2008 compared to fiscal 2007, due primarily to increased license revenue, which carries the highest margins.
+                        </pre>
+            
+                        <h3>Post-Text (Excerpt)</h3>
+                        <pre>
+            - Year ended June 30: cash provided by operations increased $25,587 to $206,588 for the fiscal year ended June 30, 2009, compared to $181,001 in 2008.
+            - This increase is primarily due to a decrease in receivables of $21,214.
+            - Early software maintenance billing in fiscal 2010 led to higher cash collection before year-end.
+            - More cash was collected for revenue to be recognized in subsequent periods than in fiscal 2008.
+            - Cash used in investing activities for fiscal year 2009 was $59,227, including $3,027 in contingent consideration paid on prior acquisitions.
             </pre>
 
             <h3>Financial Table (Excerpt from PDF)</h3>
             <pre>
-Net Cash from Operating Activities:
-2009: $206,588
-2008: $181,001
+            Net Cash from Operating Activities:
+            2009: $206,588
+            2008: $181,001
             </pre>
 
             <h3>Reasoning Steps</h3>
@@ -226,6 +226,16 @@ Net Cash from Operating Activities:
       This visualization summarizes question reasoning types, operator usage, company/year coverage, frequent answer units, and top-mentioned companies in the ConvFinQA dataset.
     </p>
   </div>
+
+  <p> This comprehensive dataset diagnostic provides a multi-faceted view of the <strong>ConvFinQA corpus</strong> shedding light on structural and semantic patterns that influence multi-agent reasoning performance. As seen in <strong>Panel 1</strong> the question type distribution is heavily skewed towards percentage/ratio-based queries indicating a strong reliance on relative financial comparisons. 
+      <strong>Panel 2</strong> shows that a few dominant operators like <em>divide</em>, <em>add</em>, and <em>subtract</em> account for the majority of program logic and thereby suggesting limited symbolic diversity.
+      <strong>Panel 3</strong>’s heatmap reveals sparse and uneven company-year coverage, which may introduce temporal and entity-specific biases into learned representations. 
+      <strong>Panel 4</strong> highlights that the most common answer unit is the percentage symbol (<code>%</code>) reinforcing the dominance of growth rate or ratio questions. Finally <strong>Panel 5</strong> surfaces the top 10 companies by mention frequency with <em>ETR</em> and <em>UNP</em> standing out pointing toward entity-level imbalances that may affect agent generalization.
+    </p>
+
+    <p>
+      These insights are critical for designing robust <strong>agentic reasoning systems</strong>, especially those leveraging retrieval, planning, or tool-augmented modules.
+    </p>
 </section>
 
     <section class="model-summary">
