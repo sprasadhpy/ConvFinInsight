@@ -480,9 +480,9 @@ Answer:
         <p>
   We implement a <strong>self-reflective evaluation loop</strong> using <strong>GPT-3.5 Turbo</strong> to enhance its reasoning fidelity on complex financial QA tasks. 
             The model is queried via LangChain’s <code>ChatOpenAI</code> interface using a structured prompt format that supports symbolic reasoning through <code>&lt;MATH&gt;</code> and <code>&lt;ANSWER&gt;</code> tags. After generating an initial answer it is compared against the ground truth using numerical thresholds (3% relative, 0.05 absolute). 
-            If incorrect then the agent is prompted to critique its own reasoning, and this reflection is incorporated into a follow-up prompt to encourage correction. 
+            If incorrect then the agent is prompted to critique its own reasoning, and this reflection is incorporated into a follow up prompt to encourage correction. 
             This creates a lightweight feedback loop that enables self-improvement without human intervention. 
-            Traces are logged via <strong>LangSmith</strong> for full reproducibility, and final results — including predictions, critiques, retries, and correctness metrics — are exported as a CSV file: <a href="outputs/langchain_self_eval.csv" download>langchain_self_eval.csv</a>. 
+            Traces are logged via <strong>LangSmith</strong> for full reproducibility, and final results  including predictions, critiques, retries, and correctness metrics — are exported as a CSV file: <a href="langchain_self_eval-2.csv" download>langchain_self_eval.csv</a>. 
             This approach draws inspiration from the work <a href="https://arxiv.org/pdf/2203.11171" target="_blank">"Self-consistency improves for Chain-of-Thought Reasoning" (Wang et al., 2023)</a> and enables scalable evaluation of multi-step financial reasoning with minimal supervision.
 </p>
 
