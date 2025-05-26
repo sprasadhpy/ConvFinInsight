@@ -335,6 +335,25 @@ def evaluate_expression(expr):
 </section>
 
 
+    <div class="container">
+    <h1>Experiment 1: Prompting Evaluation on ConvFinQA</h1>
+
+    <p>
+      We perform a structured evaluation of <strong>GPT-3.5 Turbo</strong> on the <strong>ConvFinQA</strong> dataset by comparing two prompting strategies: 
+      (1) a direct answer mode using <code>&lt;ANSWER&gt;...&lt;/ANSWER&gt;</code> and 
+      (2) a symbolic reasoning mode that embeds expressions in <code>&lt;MATH&gt;...&lt;/MATH&gt;</code> tags followed by their result.
+    </p>
+
+    <p>
+      It uses <code>LangChain</code>’s <code>ChatOpenAI</code> interface with <code>LangSmith</code> tracing to log each interaction. 
+      The script samples 200 QA pairs from <code>train_turn.json</code>, generates prompts including pre-text, post-text, and flattened financial tables, 
+      and invokes the LLM with both prompt types. If a <code>&lt;MATH&gt;</code> expression is produced it is evaluated using Python’s <code>eval()</code> in a restricted context. 
+      Predicted answers are extracted, matched against gold labels using relative (3%) and absolute (0.05) tolerances, 
+      and logged alongside latency, conversation type, and trace metadata.Final traces with results are exported to a txt file (<code>Experiment1</code>) for accuracy analysis across conversation styles and reasoning modes.
+    </p>
+  </div>
+
+
 
 
     <section class="demo">
