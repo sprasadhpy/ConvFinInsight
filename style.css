@@ -1,95 +1,119 @@
-/* Global body styling */
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #1a1a1a;
 }
-
-
-.hero {
-    background-color: #000000;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.hero .container {
-    color: #ffffff;
-}
-
-.hero .logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    color: inherit;
-    background-color: transparent;
-    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
 }
 
+header.hero {
+    background: #f7f9fc;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #eaeaea;
+}
 
-.about {
-    padding: 40px 0;
-    background-color: #ecf0f1;
+.logo {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+    color: #111827;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
     color: #333;
 }
 
-.demo {
-    padding: 40px 0;
-    background-color: #ffffff;
-    color: #333;
+ul, ol {
+    padding-left: 1.5rem;
 }
 
-
-.about h2, .demo h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+ul li, ol li {
+    margin-bottom: 0.5rem;
 }
 
-.about ul {
-    list-style-type: none;
-    padding: 0;
+pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 6px;
+    font-size: 0.95rem;
 }
 
-.about li {
-    font-size: 18px;
+code {
+    background: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
 }
 
-
-.demo button {
-    background-color: #3498db;
+/* Button */
+button {
+    background-color: #2563eb;
     color: white;
     border: none;
-    padding: 15px 25px;
-    font-size: 18px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
 }
 
-.demo button:hover {
-    background-color: #2980b9;
+button:hover {
+    background-color: #1e40af;
 }
 
-
+/* Footer */
 footer {
-    background-color: #34495e;
-    color: #fff;
     text-align: center;
-    padding: 20px;
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 3rem;
+    border-top: 1px solid #eaeaea;
+    padding: 2rem 1rem;
 }
 
-footer a {
-    color: #fff;
+/* Link Styling */
+a {
+    color: #2563eb;
     text-decoration: none;
 }
 
-footer a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
