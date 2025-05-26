@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-
 <body>
 
     <header class="hero">
         <div class="container">
             <img src="logo.jpeg" alt="ConvFinBot Logo" class="logo" />
             <h1>Welcome to ConvFinBot</h1>
-            <p>Your AI-powered assistant for the historical financial insights.</p>
+            <p>Your AI-powered assistant for historical financial insights.</p>
         </div>
     </header>
 
@@ -31,93 +30,91 @@
             <ul>
                 <li><strong>Data Source:</strong> ConvFinQA</li>
                 <li><strong>Technology:</strong> LLM-powered conversational AI</li>
-                <li><strong>Purpose:</strong> To provide accuratefinancial answers to user queries</li>
-
-                <p>This project demonstrates an agentic financial question answering system designed for faithful and multi-step reasoning over semi-structured financial data. Key components include:</p>
-
-                <ul>
-                    <li><strong>Data and Domain Understanding:</strong> Incorporates descriptive  statistics from the ConvFinQA dataset which is enriched with financial document context to ground agent behavior in real-world reporting structures.</li>
-                    <li><strong>Agent Architecture:</strong> Built on top of GPT-3.5 Turbo and Unsloth/Qwen1.5-14B the agent engages in multi-turn financial dialogues with capabilities tailored for symbolic and arithmetic reasoning over time-dependent financial variables.</li>
-                    <li><strong>Hybrid Reasoning Stack:</strong> Integrates Chain-of-Thought (CoT), Faithful CoT (natural language → symbolic chain execution), and a calculator augmented execution engine to bridge language-level reasoning and numerate fidelity.</li>
-                    <li><strong>Conversational Evaluation:</strong> Benchmarked on over 200 sampled and synthesized financial dialogues using hybrid CoT and extended symbolic reasoning and grounded by intermediate program verification and trace validation using Langchain.</li>
-                    <li><strong>Prompting Strategy Benchmark:</strong> Explores diverse prompting schemas :zero-shot, CoT, tool augmented and promptslogged via LangChain instrumentation to trace reasoning fidelity and deviation patterns in financial statement.</li>
-                    <li><strong>Self-Evaluation Module:</strong> Embeds a reflective agent layer for post hoc verification of answer consistency and reasoning trace alignment, enabling adaptive correction in the loop.</li>
-                    <li><strong>Extended Inference Control:</strong> Leverages <code>&lt;WAIT&gt;</code> tokens and recent s1 delayed decision primitives to support test-time scaffolding technique.</li>
-                    <li><strong>External Knowledge Alignment:</strong> Integrates FMP API to inject real time financial data : facilitating hallucination avoidance and also analysis of agentic failure modes under partial observability.</li>
-                    <li><strong>Comparative Model Evaluation:</strong> Conducts targeted accuracy assessments between GPT-3.5 and fine-tuned Unsloth Qwen1.5-14B across multi-hop financial reasoning scenarios.</li>
-                    <li><strong>Optimization Techniques:</strong> Applies Supervised Fine-Tuning (SFT) and Group Relative Policy Optimization (GRPO) via Unsloth to improve trajectory faithfulness under reward-aware alignment signals.</li>
-                    <li><strong>Retrieval-Augmented :</strong> Implements simple RAG pipelines for supporting contextual grounding enabling the agent to condition on structured and semi-structured financial narratives during answer generation.</li>
-                </ul>
-
+                <li><strong>Purpose:</strong> To provide accurate financial answers to user queries</li>
+            </ul>
+            <p>
+                This project demonstrates an agentic financial question answering system designed for faithful and multi-step reasoning over semi-structured financial data. Key components include:
+            </p>
+            <ul>
+                <li><strong>Data and Domain Understanding:</strong> Incorporates descriptive statistics from the ConvFinQA dataset which is enriched with financial document context to ground agent behavior in real-world reporting structures.</li>
+                <li><strong>Agent Architecture:</strong> Built on top of GPT-3.5 Turbo and Unsloth/Qwen1.5-14B the agent engages in multi-turn financial dialogues with capabilities tailored for symbolic and arithmetic reasoning over time-dependent financial variables.</li>
+                <li><strong>Hybrid Reasoning Stack:</strong> Integrates Chain-of-Thought (CoT), Faithful CoT (natural language → symbolic chain execution) and a calculator augmented execution engine to bridge language-level reasoning and numerate fidelity.</li>
+                <li><strong>Conversational Evaluation:</strong> Benchmarked on over 200 sampled and synthetic financial dialogues using hybrid CoT , extended symbolic reasoning and grounded by intermediate program verification and trace validation using Langchain.</li>
+                <li><strong>Prompting Strategy Benchmark:</strong> Explores diverse prompting schemas: zero-shot, CoT, tool-augmented and prompts logged via LangChain instrumentation to trace reasoning fidelity and deviation patterns in financial statements.</li>
+                <li><strong>Self-Evaluation Module:</strong> Embeds a reflective agent layer for post hoc verification of answer consistency and reasoning trace alignment, enabling adaptive correction in the loop.</li>
+                <li><strong>Extended Inference Control:</strong> Leverages <code>&lt;WAIT&gt;</code> tokens and recent s1 delayed decision primitives to support test-time scaffolding techniques.</li>
+                <li><strong>External Knowledge Alignment:</strong> Integrates FMP API to inject real-time financial data, facilitating hallucination avoidance and analysis of agentic failure modes under partial observability.</li>
+                <li><strong>Comparative Model Evaluation:</strong> Conducts targeted accuracy assessments between GPT-3.5 and fine-tuned Unsloth Qwen1.5-14B across multi-hop financial reasoning scenarios.</li>
+                <li><strong>Optimization Techniques:</strong> Applies Supervised Fine-Tuning (SFT) and Group Relative Policy Optimization (GRPO) via Unsloth to improve trajectory faithfulness under reward-aware alignment signals.</li>
+                <li><strong>Retrieval-Augmented:</strong> Implements simple RAG pipelines for supporting contextual grounding enabling the agent to condition on structured and semi-structured financial narratives during answer generation.</li>
             </ul>
         </div>
     </section>
 
-            <section class="dataset-stats">
-            <div class="container">
-                <h2>Dataset Statistics</h2>
-                <p>Below are the statistics for the ConvFinQA dataset used in training and evaluation:</p>
-                <ul>
-                    <li><strong>Train Dialogues:</strong> 3,037 samples</li>
-                    <li><strong>Train Turns:</strong> 11,104 samples</li>
-                    <li><strong>Dev Dialogues:</strong> 421 samples</li>
-                    <li><strong>Dev Turns:</strong> 1,490 samples</li>
-                    <li><strong>Test Dialogues (Private):</strong> 434 samples</li>
-                    <li><strong>Test Turns (Private):</strong> 1,521 samples</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="sample-dataset">
-            <div class="container">
-                <h2>Sample Dataset Example</h2>
-                <p><strong>Document:</strong> JKHY/2009/page_28.pdf</p>
-                <p><strong>QA Question:</strong> What was the percentage change in the net cash from operating activities from 2008 to 2009?</p>
-                <p><strong>Answer:</strong> 14.1%</p>
-        
-                <hr />
-        
-                <h3>Pre-Text (Excerpt)</h3>
-                <pre>
-        - 26 | 2009 annual report in fiscal 2008, revenues in the credit union systems and services business segment increased 14% from fiscal 2007.
-        - All revenue components within the segment experienced growth during fiscal 2008.
-        - License revenue generated the largest dollar growth in revenue as Episys AE, our flagship core processing system aimed at larger credit unions, experienced strong sales throughout the year.
-        - Support and service revenue, the largest component of total revenues for the credit union segment, experienced 34% growth in EFT support and 10% growth in in-house support.
-        - Gross profit in this segment increased $9,344 in fiscal 2008 compared to fiscal 2007, due primarily to increased license revenue, which carries the highest margins.
-                </pre>
-        
-                <h3>Post-Text (Excerpt)</h3>
-                <pre>
-        - Year ended June 30: cash provided by operations increased $25,587 to $206,588 for the fiscal year ended June 30, 2009, compared to $181,001 in 2008.
-        - This increase is primarily due to a decrease in receivables of $21,214.
-        - Early software maintenance billing in fiscal 2010 led to higher cash collection before year-end.
-        - More cash was collected for revenue to be recognized in subsequent periods than in fiscal 2008.
-        - Cash used in investing activities for fiscal year 2009 was $59,227, including $3,027 in contingent consideration paid on prior acquisitions.
-                </pre>
-        
-                <h3>Financial Table (Excerpt from PDF)</h3>
-                <pre>
-        Net Cash from Operating Activities:
-        2009: $206,588
-        2008: $181,001
-                </pre>
-        
-                <h3>Reasoning Steps</h3>
-                <ul>
-                    <li>Difference = 206,588 − 181,001 = 25,587</li>
-                    <li>Percentage Change = (25,587 / 181,001) × 100 = 14.1%</li>
-                </ul>
-        
-                <h3>Dialogue Breakdown</h3>
-                <ol>
-                    <li>Q0: What is the net cash from operating activities in 2009?</li>
-                    <li>Q1: What about in 2008?</li>
-                    <li>Q2: What is the difference?</li>
-                    <li>Q3: What percentage change does this represent?</li>
-                </ol>
-            </div>
-        </section>
+    <section class="dataset-stats">
+        <div class="container">
+            <h2>Dataset Statistics</h2>
+            <p>Below are the statistics for the ConvFinQA dataset used in training and evaluation:</p>
+            <ul>
+                <li><strong>Train Dialogues:</strong> 3,037 samples</li>
+                <li><strong>Train Turns:</strong> 11,104 samples</li>
+                <li><strong>Dev Dialogues:</strong> 421 samples</li>
+                <li><strong>Dev Turns:</strong> 1,490 samples</li>
+                <li><strong>Test Dialogues (Private):</strong> 434 samples</li>
+                <li><strong>Test Turns (Private):</strong> 1,521 samples</li>
+            </ul>
+        </div>
+    </section>
 
+    <section class="sample-dataset">
+        <div class="container">
+            <h2>Sample Dataset Example</h2>
+            <p><strong>Document:</strong> JKHY/2009/page_28.pdf</p>
+            <p><strong>QA Question:</strong> What was the percentage change in the net cash from operating activities from 2008 to 2009?</p>
+            <p><strong>Answer:</strong> 14.1%</p>
+
+            <hr />
+
+            <h3>Pre-Text (Excerpt)</h3>
+            <pre>
+- 26 | 2009 annual report in fiscal 2008, revenues in the credit union systems and services business segment increased 14% from fiscal 2007.
+- All revenue components within the segment experienced growth during fiscal 2008.
+- License revenue generated the largest dollar growth in revenue as Episys AE, our flagship core processing system aimed at larger credit unions, experienced strong sales throughout the year.
+- Support and service revenue, the largest component of total revenues for the credit union segment, experienced 34% growth in EFT support and 10% growth in in-house support.
+- Gross profit in this segment increased $9,344 in fiscal 2008 compared to fiscal 2007, due primarily to increased license revenue, which carries the highest margins.
+            </pre>
+
+            <h3>Post-Text (Excerpt)</h3>
+            <pre>
+- Year ended June 30: cash provided by operations increased $25,587 to $206,588 for the fiscal year ended June 30, 2009, compared to $181,001 in 2008.
+- This increase is primarily due to a decrease in receivables of $21,214.
+- Early software maintenance billing in fiscal 2010 led to higher cash collection before year-end.
+- More cash was collected for revenue to be recognized in subsequent periods than in fiscal 2008.
+- Cash used in investing activities for fiscal year 2009 was $59,227, including $3,027 in contingent consideration paid on prior acquisitions.
+            </pre>
+
+            <h3>Financial Table (Excerpt from PDF)</h3>
+            <pre>
+Net Cash from Operating Activities:
+2009: $206,588
+2008: $181,001
+            </pre>
+
+            <h3>Reasoning Steps</h3>
+            <ul>
+                <li>Difference = 206,588 − 181,001 = 25,587</li>
+                <li>Percentage Change = (25,587 / 181,001) × 100 = 14.1%</li>
+            </ul>
+
+            <h3>Dialogue Breakdown</h3>
+            <ol>
+                <li>Q0: What is the net cash from operating activities in 2009?</li>
+                <li>Q1: What about in 2008?</li>
+                <li>Q2: What is the difference?</li>
+                <li>Q3: What percentage change does this represent?</li>
+            </ol>
+        </div>
+    </section>
 
     <section class="demo">
         <div class="container">
