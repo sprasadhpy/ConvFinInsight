@@ -349,7 +349,14 @@ def evaluate_expression(expr):
       The script samples 200 QA pairs from <code>train_turn.json</code>, generates prompts including pre-text, post-text, and flattened financial tables, 
       and invokes the LLM with both prompt types. If a <code>&lt;MATH&gt;</code> expression is produced it is evaluated using Python’s <code>eval()</code> in a restricted context. 
       Predicted answers are extracted, matched against gold labels using relative (3%) and absolute (0.05) tolerances, 
-      and logged alongside latency, conversation type, and trace metadata.Final traces with results are exported to a txt file (<code>Experiment1</code>) for accuracy analysis across conversation styles and reasoning modes.
+      and logged alongside latency, conversation type, and trace metadata.<p> Final traces with results are exported to a txt file (<code>Experiment1</code>) for accuracy analysis across conversation styles and reasoning modes.
+    </p>
+
+    <p>
+  <strong>Download full trace output:</strong><br />
+  <a href="Experiment1.txt" download>Click here to download Experiment1.txt</a>
+   </p>
+
     </p>
   </div>
 
