@@ -21,6 +21,19 @@ header.hero {
     border-bottom: 1px solid #eaeaea;
 }
 
+header.hero p {
+    background: #f7f9fc;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;  /* Add this for spacing */
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+
+
 .logo {
     max-width: 100px;
     margin-bottom: 1rem;
