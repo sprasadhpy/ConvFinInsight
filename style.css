@@ -1,4 +1,4 @@
-/* Base Styles */
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -49,7 +49,9 @@ h3 {
 p {
     font-size: 1rem;
     color: #333;
+    text-align: justify;  
 }
+
 
 ul, ol {
     padding-left: 1.5rem;
@@ -91,7 +93,7 @@ button:hover {
     background-color: #1e40af;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     font-size: 0.9rem;
@@ -101,7 +103,7 @@ footer {
     padding: 2rem 1rem;
 }
 
-/* Link Styling */
+
 a {
     color: #2563eb;
     text-decoration: none;
@@ -111,7 +113,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Section Styling */
+
 section {
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 2rem;
