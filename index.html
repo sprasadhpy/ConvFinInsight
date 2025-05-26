@@ -484,32 +484,36 @@ Answer:
   </div>
 
   <div class="container" style="text-align: center; padding: 20px;">
-    <h2>Figure 3: Comparison of Prompting Strategies</h2>
-    <p style="font-size: 14px; color: #444;">
-      This figure compares the performance of various prompting strategies on ConvFinQA.<strong>LLM + Calculator</strong> (63%) and <strong>PoT</strong> (61.5%) perform best, demonstrating that external tools and structured reasoning significantly boost accuracy.
-      Mid-tier strategies like <strong>ReflectionCoT</strong>, <strong>ExplicitCoT</strong>, and <strong>Scratchpad</strong> (54–56%) offer modest improvements, but fall short of the gains achieved by tool-augmented or symbolic approaches.
-    <br>
-    <br>
-    </p>
-    <div style="text-align: center;">
-      <img src="Experiment2.png" alt="Accuracy Comparison of Prompting Strategies"
-           style="width: 70%; max-width: 600px; border: 1px solid #ccc; border-radius: 8px; 
-           box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
-    </div>
+  <h2>Figure 2: Comparison of Prompting Strategies</h2>
+  <p style="font-size: 14px; color: #444;">
+    This figure compares the performance of various prompting strategies on ConvFinQA.
+    <strong>LLM + Calculator</strong> (63%) and <strong>PoT</strong> (61.5%) perform best, demonstrating that external tools and structured reasoning significantly boost accuracy.
+    Mid-tier strategies like <strong>ReflectionCoT</strong>, <strong>ExplicitCoT</strong>, and <strong>Scratchpad</strong> (54–56%) offer modest improvements but fall short of the gains achieved by tool-augmented or symbolic approaches.
+  </p>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <img 
+      src="Experiment2.png" 
+      alt="Accuracy Comparison of Prompting Strategies"
+      style="width: 70%; max-width: 600px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" 
+    />
   </div>
-    <div class="agentic-prompt-description">
-      <p>
-        We created a specialized agentic prompt inspired by the declarative and disciplined style described in the 
-        <a href="https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/Claude_4.txt" target="_blank">
-          CL4R1T4S Claude 4 prompt
-        </a>. 
-        Our version is tailored for a <strong>convfinQA</strong>. It enforces behavioral boundaries using declarative intent, 
-        step-by-step symbolic reasoning, and scoped data usage to prevent hallucinations. The prompt structure includes 
-        XML-style wrappers like <code>&lt;MATH&gt;</code> and <code>&lt;ANSWER&gt;</code> to isolate computations and results. 
-        It also integrates fallback logic and explicit constraint repetition to reinforce safe and accurate responses across 
-        long-form queries.
-      </p>
-    </div>    
+</div>
+
+<div class="agentic-prompt-description" style="margin-top: 30px;">
+  <p style="font-size: 14px; color: #444;">
+    We created a specialized agentic prompt inspired by the declarative and disciplined style described in the 
+    <a href="https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/Claude_4.txt" target="_blank">
+      CL4R1T4S Claude 4 prompt
+    </a>. 
+    Our version is tailored for <strong>ConvFinQA</strong>. It enforces behavioral boundaries using declarative intent, 
+    step-by-step symbolic reasoning, and scoped data usage to prevent hallucinations. The prompt structure includes 
+    XML-style wrappers like <code>&lt;MATH&gt;</code> and <code>&lt;ANSWER&gt;</code> to isolate computations and results. 
+    It also integrates fallback logic and explicit constraint repetition to reinforce safe and accurate responses across 
+    long-form queries.
+  </p>
+</div>
+
 </section>
 
 
