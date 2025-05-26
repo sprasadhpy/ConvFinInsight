@@ -536,6 +536,17 @@ Answer:
   </section>
 </div>
 
+    <h2>Experiment 5: FMP API Integration (Failure).  Drop in Accuracy</h2>
+
+  <p>
+    In this experiment we investigated whether augmenting the LLM with real-time stock price data from the Financial Modeling Prep (FMP) API would improve accuracy on price-related financial questions. Contrary to expectations, the integration led to a drop in overall accuracy compared to both the baseline LLM-only and LLM+calculator setups. While the added context was intended to provide more up-to-date price signals, it frequently introduced conflicting information when juxtaposed with the static tabular data provided in the original question. This mismatch caused the LLM to either misinterpret which price to prioritize or generate answers that inconsistently blended real-time and historical data. Additionally, the FMP-provided values often did not align with the ground truth in the ConvFinQA dataset, leading to more numeric mismatches during evaluation. <strong>Result saved to <code>stock_price_accuracy_analysis.csv</code>.</strong>
+    A recurring agent failure mode observed during evaluation was the LLM’s tendency to over-assume data availability. In questions such as <em>“What is the growth rate in the common stock price from the highest price during quarter ended December 31, 2005, to the highest price during quarter ended December 31, 2006?”</em>, the model proceeded with the computation even when only one year’s data or aggregate values were available, leading to hallucinated reasoning steps. This highlights the need for an intermediate reasoning layer that explicitly verifies whether all required data points are present before computation begins. Incorporating a data sufficiency check as part of the agent's pipeline could prevent such failures and substantially improve factual reliability in future multi-modal financial QA systems.
+  </p>
+
+  <p>
+    I’ve written about this in more detail in a separate blog post: 
+    <a href="https://your-blog-link.com" target="_blank">Read the full breakdown here</a>.
+  </p>
 
 
 
