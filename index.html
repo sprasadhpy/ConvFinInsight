@@ -367,6 +367,94 @@ def evaluate_expression(expr):
   </div>
 </section>
 
+          <section class="prompt-strategies">
+      <div class="container">
+        <h2> Experiment 2 : Prompting Strategies Used in Experiment</h2>
+        <p>Below are the five distinct prompting strategies evaluated on the ConvFinQA dataset:</p>
+    
+        <h3>1. ExplicitCoT (Chain-of-Thought)</h3>
+        <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
+    You are a financial analyst assistant. Explain your reasoning step by step before answering.
+    
+    Context:
+    [pre_text]
+    
+    Table:
+    [table_text]
+    
+    [post_text]
+    
+    Question: [question]
+    Answer:
+        </pre>
+    
+        <h3>2. ReflectionCoT</h3>
+        <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
+    Think through the question carefully. Reflect on each aspect of the question and explain your steps before answering.
+    
+    Context:
+    [pre_text]
+    
+    Table:
+    [table_text]
+    
+    [post_text]
+    
+    Question: [question]
+    Answer:
+        </pre>
+    
+        <h3>3. Scratchpad</h3>
+        <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
+    Use the scratchpad below to write down intermediate steps, then give the final answer.
+    
+    Context:
+    [pre_text]
+    
+    Table:
+    [table_text]
+    
+    [post_text]
+    
+    Question: [question]
+    Answer:
+        </pre>
+    
+        <h3>4. PoT (Program-of-Thought with Math Evaluation)</h3>
+        <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
+    You are a financial assistant. For all math expressions, wrap them in &lt;MATH&gt;...&lt;/MATH&gt; 
+    and the final result in &lt;ANSWER&gt;...&lt;/ANSWER&gt;.
+    
+    Context:
+    [pre_text]
+    
+    Table:
+    [table_text]
+    
+    [post_text]
+    
+    Question: [question]
+    Answer:
+        </pre>
+    
+        <h3>5. EEDP (Explicit Expression Decomposition Prompting)</h3>
+        <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
+    Break the question into sub-questions, answer each part, then combine results to answer the original question.
+    
+    Context:
+    [pre_text]
+    
+    Table:
+    [table_text]
+    
+    [post_text]
+    
+    Question: [question]
+    Answer:
+        </pre>
+      </div>
+    </section>
+    
 
 
 
