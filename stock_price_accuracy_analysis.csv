@@ -1,0 +1,1454 @@
+id,turn_ind,question,gold,pred_llm,score_llm,match_llm,latency_llm,pred_calc,score_calc,match_calc,latency_calc,expr,gen_llm,gen_calc,ticker,fmp_price,gen_calc_fmp,pred_calc_fmp,score_calc_fmp,match_calc_fmp
+Single_PM/2017/page_25.pdf-2_2,,what is the growth rate in pmi's share price from 2014 to 2015?,13.4,13.74,1,Match (numeric),0.5041036605834961,13.37,1,Match (numeric),1.383976936340332,,<ANSWER>The growth rate in PMI's share price from 2014 to 2015 is 13.74%.</ANSWER>,"To calculate the growth rate in PMI's share price from 2014 to 2015, we use the formula:
+
+\[ \text{Growth Rate} = \left( \frac{\text{Ending Value} - \text{Beginning Value}}{\text{Beginning Value}} \right) \times 100\% \]
+
+Plugging in the values for PMI's share price:
+\[ \text{Growth Rate} = \left( \frac{120.40 - 106.20}{106.20} \right) \times 100\% \]
+\[ \text{Growth Rate} = \left( \frac{14.20}{106.20} \right) \times 100\% \]
+\[ \text{Growth Rate} = 0.1337 \times 100\% \]
+\[ \text{Growth Rate} = 13.37\% \]
+
+Therefore, the growth rate in PMI's share price from 2014 to 2015 is 13.37%.",PM,178.19,"To calculate the growth rate in PMI's share price from 2014 to 2015, we can use the formula for growth rate:
+
+\[ \text{Growth Rate} = \left( \frac{\text{Ending Value} - \text{Beginning Value}}{\text{Beginning Value}} \right) \times 100 \]
+
+Using the provided data:
+- Beginning Value (2014): $106.20
+- Ending Value (2015): $120.40
+
+\[ \text{Growth Rate} = \left( \frac{120.40 - 106.20}{106.20} \right) \times 100 \]
+\[ \text{Growth Rate} = \left( \frac{14.20}{106.20} \right) \times 100 \]
+\[ \text{Growth Rate} = 0.1337 \times 100 \]
+\[ \text{Growth Rate} = 13.37\% \]
+
+Therefore, the growth rate in PMI's share price from 2014 to 2015 is 13.37%.",13.37,1,Match (numeric)
+Single_VLO/2017/page_28.pdf-3_0,,by what percentage did the share price increase from october to november 2017?,5.3,5.24,1,Match (numeric),0.37090444564819336,2017.0,0,No match (diff 2011.7000),1.954289436340332,,<ANSWER>5.24%</ANSWER>,"To calculate the percentage increase in share price from October to November 2017, we can use the formula:
+
+Percentage Increase = ((New Price - Old Price) / Old Price) * 100
+
+Given:
+- October 2017 average price: $77.15
+- November 2017 average price: $81.21
+
+Plugging in the values:
+
+Percentage Increase = (($81.21 - $77.15) / $77.15) * 100
+Percentage Increase = ($4.06 / $77.15) * 100
+Percentage Increase = 0.0526 * 100
+Percentage Increase = 5.26%
+
+Therefore, the share price increased by 5.26% from October to November 2017.",VLO,128.55,"To calculate the percentage increase in share price from October to November 2017, we need to find the difference in average price paid per share between November and October, divide that by the October price, and then multiply by 100 to get the percentage increase.
+
+Average price paid per share in November 2017 = $81.21
+Average price paid per share in October 2017 = $77.15
+
+Difference = $81.21 - $77.15 = $4.06
+
+Percentage increase = (<MATH> \frac{4.06}{77.15} </MATH>) * 100 = <ANSWER>5.26%</ANSWER>
+
+Therefore, the share price increased by 5.26% from October to November 2017.",5.26,1,Match (numeric)
+Single_PPG/2011/page_46.pdf-2_1,,"what would the remaining cost to repurchase shares under the october 2009 agreement be assuming the december 31 , 2009 weighted average share price ?",5666000.0,11.26,0,No match (diff 5665988.7400),0.7014873027801514,5.66,0,No match (diff 5665994.3400),1.3404991626739502,,<ANSWER>$ 11.26 million</ANSWER>,"To calculate the remaining cost to repurchase shares under the October 2009 agreement, we need to find the number of shares remaining to be repurchased and then multiply it by the weighted average share price as of December 31, 2009.
+
+Number of shares remaining to be repurchased = Total shares agreed to be repurchased - Shares already repurchased
+Number of shares remaining = 1.2 million - 1.1 million
+Number of shares remaining = 0.1 million
+
+Remaining cost to repurchase shares = Number of shares remaining * Weighted average share price as of December 31, 2009
+Remaining cost to repurchase shares = 0.1 million * $56.66
+Remaining cost to repurchase shares = $5.66 million
+
+Therefore, the remaining cost to repurchase shares under the October 2009 agreement would be $5.66 million.",PPG,110.08,"To calculate the remaining cost to repurchase shares under the October 2009 agreement, we first need to determine the number of shares remaining to be repurchased. 
+
+The total number of shares agreed to be repurchased was 1.2 million shares. Out of these, 1.1 million shares were already purchased, leaving 0.1 million shares remaining.
+
+Given that the weighted average price of shares purchased as of December 31, 2009 was $56.66 per share, we can calculate the remaining cost as follows:
+
+Remaining cost = Number of remaining shares * Weighted average price per share
+Remaining cost = 0.1 million shares * $56.66 per share
+Remaining cost = $5,666,000
+
+Therefore, the remaining cost to repurchase shares under the October 2009 agreement, assuming the December 31, 2009 weighted average share price, would be $5,666,000.",0.0,0,No match (diff 5666000.0000)
+Single_IPG/2017/page_26.pdf-2_0,,what is the percentage decrease in average price per share from october to november?,8.92,9.09,1,Match (numeric),0.3191251754760742,8.91,1,Match (numeric),1.2237343788146973,,<ANSWER>9.09%</ANSWER>,"To calculate the percentage decrease in average price per share from October to November, we first need to find the difference in average price per share between the two months.
+
+Average price per share in October = $20.74
+Average price per share in November = $18.89
+
+Difference = $20.74 - $18.89 = $1.85
+
+Next, we calculate the percentage decrease:
+
+Percentage decrease = (Difference / Average price per share in October) * 100
+Percentage decrease = ($1.85 / $20.74) * 100 = 8.91%
+
+Therefore, the percentage decrease in average price per share from October to November is 8.91%.",IPG,24.0,"To calculate the percentage decrease in average price per share from October to November, we first need to find the average price per share for each month.
+
+For October:
+Total amount paid for shares in October = 1231868 shares * $20.74 = $25,532,091.92
+
+For November:
+Total amount paid for shares in November = 1723139 shares * $18.89 = $32,558,232.71
+
+Now, we can calculate the percentage decrease:
+Percentage decrease = ((Average price in October - Average price in November) / Average price in October) * 100
+= (($25,532,091.92 / 1231868) - ($32,558,232.71 / 1723139)) / ($25,532,091.92 / 1231868) * 100
+= (($20.74 - $18.89) / $20.74) * 100
+= ($1.85 / $20.74) * 100
+= 8.92%
+
+Therefore, the percentage decrease in average price per share from October to November is 8.92%.",8.92,1,Match (numeric)
+Single_AMT/2005/page_31.pdf-1_0,,what is the growth rate in the common stock price from the highest price during quarter ended december 31 of 2005 to the highest price during quarter ended december 31 of 2006?,51.1,5.34,0,No match (diff 45.7600),0.6237533092498779,5.29,0,No match (diff 45.8100),2.2110471725463867,,"<ANSWER>The growth rate in the common stock price from the highest price during quarter ended December 31, 2005, to the highest price during quarter ended December 31, 2006, is 5.34%.</ANSWER>","To calculate the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, we first need to find the prices for those quarters.
+
+The highest price during the quarter ended December 31, 2005, was $28.33.
+The highest price during the quarter ended December 31, 2006, was $29.83.
+
+Now, we can calculate the growth rate using the formula:
+
+Growth Rate = ((Ending Value - Beginning Value) / Beginning Value) * 100
+
+Growth Rate = (($29.83 - $28.33) / $28.33) * 100
+Growth Rate = ($1.50 / $28.33) * 100
+Growth Rate = 0.0529 * 100
+Growth Rate = 5.29%
+
+Therefore, the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, is 5.29%.",AMT,211.86,"To calculate the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, we need to find the percentage increase.
+
+Highest price during quarter ended December 31, 2005: $28.33
+Highest price during quarter ended December 31, 2006: $211.86
+
+Percentage increase = [(New Price - Old Price) / Old Price] * 100
+Percentage increase = [($211.86 - $28.33) / $28.33] * 100
+
+<MATH>[(211.86 - 28.33) / 28.33] * 100 = 647.85%</MATH>
+
+Therefore, the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, is approximately 647.85%.",647.85,0,No match (diff 596.7500)
+Single_DVN/2011/page_26.pdf-1_2,,what was the average change in the share price from october to november,13.4,7.86,0,No match (diff 5.5400),0.3977680206298828,7.86,0,No match (diff 5.5400),0.8698656558990479,,<ANSWER> $7.86 </ANSWER>,"To find the average change in share price from October to November, we need to calculate the difference in average price paid per share between the two months.
+
+Average price in October = $58.52
+Average price in November = $66.38
+
+Average change = Average price in November - Average price in October
+Average change = $66.38 - $58.52
+Average change = $7.86
+
+Therefore, the average change in the share price from October to November was $7.86.",DVN,31.16,"To calculate the average change in share price from October to November, we need to find the difference in average price paid per share between the two months.
+
+Average price in October = $58.52
+Average price in November = $66.38
+
+Change in average price = $66.38 - $58.52 = $7.86
+
+Therefore, the average change in share price from October to November was $7.86.",7.86,0,No match (diff 5.5400)
+Single_PPG/2011/page_46.pdf-2_0,,"what would the remaining cost to repurchase shares under the october 2009 agreement be assuming the december 31 , 2009 weighted average share price ?",5666000.0,56.66,0,No match (diff 5665943.3400),0.3836226463317871,5.666,0,No match (diff 5665994.3340),1.4703052043914795,,<ANSWER>$ 56.66 per share</ANSWER>,"To calculate the remaining cost to repurchase shares under the October 2009 agreement, we need to find the number of shares remaining to be repurchased and then multiply it by the weighted average share price as of December 31, 2009.
+
+Number of shares remaining to be repurchased = Total shares agreed to be repurchased - Shares already repurchased
+Number of shares remaining to be repurchased = 1.2 million - 1.1 million
+Number of shares remaining to be repurchased = 0.1 million
+
+Remaining cost to repurchase shares = Number of shares remaining to be repurchased * Weighted average share price as of December 31, 2009
+Remaining cost to repurchase shares = 0.1 million * $56.66
+Remaining cost to repurchase shares = $5.666 million
+
+Therefore, the remaining cost to repurchase shares under the October 2009 agreement would be $5.666 million.",PPG,110.08,"To calculate the remaining cost to repurchase shares under the October 2009 agreement, we first need to determine the number of shares remaining to be repurchased. 
+
+Given that 1.1 million shares were purchased in the open market and a total of 1.2 million shares were authorized to be repurchased, the remaining shares to be repurchased would be:
+1.2 million - 1.1 million = 0.1 million shares
+
+Next, we calculate the remaining cost by multiplying the number of remaining shares by the weighted average share price as of December 31, 2009:
+0.1 million shares * $56.66 per share = $5.666 million
+
+Therefore, the remaining cost to repurchase shares under the October 2009 agreement would be $5.666 million.",5.666,0,No match (diff 5665994.3340)
+Single_VRTX/2006/page_112.pdf-1_2,,"what was the average price per share , in dollars , of the stock the company sold in august 2006?",14.3,14.33,1,Match (numeric),0.5630509853363037,14.3,1,Match (numeric),0.9907286167144775,,<ANSWER>$14.33</ANSWER>,"To find the average price per share of the stock the company sold in August 2006, we need to divide the total amount received from the sale by the total number of shares sold.
+
+Total amount received from the sale = $11.7 million
+Total number of shares sold = 817749
+
+Average price per share = Total amount received from the sale / Total number of shares sold
+Average price per share = $11,700,000 / 817749
+Average price per share = $14.30
+
+Therefore, the average price per share of the stock the company sold in August 2006 was $14.30.",VRTX,436.0,"To calculate the average price per share of the stock the company sold in August 2006, we need to divide the total amount received from selling the shares by the total number of shares sold.
+
+Total amount received from selling the shares = $11.7 million
+Total number of shares sold = 817749
+
+Average price per share = Total amount received / Total number of shares sold
+Average price per share = $11,700,000 / 817749
+Average price per share = $14.30
+
+Therefore, the average price per share of the stock the company sold in August 2006 was $14.30.",14.3,1,Match (numeric)
+Single_IPG/2014/page_95.pdf-3_0,,"with 2014 closing stock price , what is the total value of the award for the additional shares , ( in millions ) ?",56.5,56.5,1,Match (numeric),0.32839417457580566,56.52,1,Match (numeric),1.0441999435424805,,<ANSWER>$56.5 million</ANSWER>,"To calculate the total value of the award for the additional shares, we first need to determine the number of additional shares and then multiply it by the 2014 closing stock price.
+
+Number of additional shares = 2,721,405
+2014 closing stock price = $20.77
+
+Total value of the award for the additional shares = Number of additional shares * 2014 closing stock price
+Total value = 2,721,405 * $20.77 = $56,515,252.85
+
+Therefore, the total value of the award for the additional shares is approximately $56.52 million.",IPG,24.0,"To calculate the total value of the award for the additional shares in millions, we first need to determine the total number of additional shares awarded and then multiply it by the 2014 closing stock price of $20.77.
+
+Total number of additional shares awarded = 2,721,405 shares
+2014 closing stock price = $20.77
+Total value of the award for the additional shares = 2,721,405 shares * $20.77 = $56,521,462.85
+
+Since the current market price of IPG is $24, we can calculate the total value of the award for the additional shares in millions by dividing the total value by 1 million:
+
+Total value of the award for the additional shares in millions = $56,521,462.85 / $1,000,000 = $56.52 million
+
+Therefore, the total value of the award for the additional shares, in millions, is $56.52 million.",56.52,1,Match (numeric)
+Single_CDNS/2012/page_58.pdf-1_3,,what is the percentage difference in the number of shares to be issued if the stock price closes at $ 11 compared to if it closes at $ 20?,278.0,237.78,0,No match (diff 40.2200),0.5610833168029785,2278.0,0,No match (diff 2000.0000),1.38692045211792,,<ANSWER>The percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is approximately 237.78%.</ANSWER>,"To calculate the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20, we first need to find the number of shares to be issued at each price point.
+
+At $11, the number of shares to be issued is 0.9 million.
+At $20, the number of shares to be issued is 21.4 million.
+
+Now, we can calculate the percentage difference using the formula:
+
+Percentage Difference = ((New Value - Old Value) / Old Value) * 100
+
+Percentage Difference = ((21.4 - 0.9) / 0.9) * 100
+Percentage Difference = (20.5 / 0.9) * 100
+Percentage Difference = 22.78 * 100
+Percentage Difference = 2278%
+
+Therefore, the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is 2278%.",CDNS,315.51,"To calculate the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20, we first need to find the number of shares to be issued at each price point.
+
+At $11, 0.9 million shares will be issued.
+At $20, 21.4 million shares will be issued.
+
+The difference in the number of shares issued is 21.4 - 0.9 = 20.5 million shares.
+
+To find the percentage difference, we use the formula:
+
+Percentage Difference = (Difference / Initial Value) * 100
+
+Plugging in the values:
+
+Percentage Difference = (20.5 / 0.9) * 100
+Percentage Difference = 2288.89%
+
+Therefore, the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is 2288.89%.",2288.89,0,No match (diff 2010.8900)
+Single_AES/2003/page_48.pdf-1_1,,"in q1 2003 , what was the average of the high and low stock price?",3.38,3.38,1,Match (numeric),0.3685932159423828,3.38,1,Match (numeric),1.0862476825714111,$4.04 + $2.72,<ANSWER>$3.38</ANSWER>,"To find the average of the high and low stock price in Q1 2003, we add the high and low prices and divide by 2.
+
+High price in Q1 2003 = $4.04
+Low price in Q1 2003 = $2.72
+
+Average = (<MATH>$4.04 + $2.72</MATH>) / 2 = <ANSWER>$3.38</ANSWER>",AES,9.99,"To find the average of the high and low stock price in Q1 2003, we need to add the high and low prices and then divide by 2.
+
+High price in Q1 2003 = $4.04
+Low price in Q1 2003 = $2.72
+
+Average = (<MATH>4.04 + 2.72</MATH>) / 2 = <ANSWER>$3.38</ANSWER>",6.76,0,No match (diff 3.3800)
+Single_DVN/2011/page_26.pdf-1_0,,what was the average change in the share price from october to november,13.4,7.86,0,No match (diff 5.5400),0.36756372451782227,7.86,0,No match (diff 5.5400),1.1045351028442383,,<ANSWER> $7.86 </ANSWER>,"To find the average change in share price from October to November, we need to calculate the difference in average price paid per share between the two months.
+
+Average price in October = $58.52
+Average price in November = $66.38
+
+Average change = Average price in November - Average price in October
+Average change = $66.38 - $58.52
+Average change = $7.86
+
+Therefore, the average change in the share price from October to November was $7.86.",DVN,31.16,"To calculate the average change in share price from October to November, we need to find the difference in average price paid per share between the two months.
+
+Average price paid per share in October = $58.52
+Average price paid per share in November = $66.38
+
+Change in share price = Average price in November - Average price in October
+Change in share price = $66.38 - $58.52
+Change in share price = $7.86
+
+Therefore, the average change in share price from October to November was $7.86.",7.86,0,No match (diff 5.5400)
+Single_SLB/2009/page_46.pdf-3_1,,by how much did the average price per share decrease from 2007 to 2009?,-23.0,19.04,0,No match (diff 42.0400),0.32773637771606445,19.04,0,No match (diff 42.0400),0.9584627151489258,,<$19.04>,"The average price per share decreased by $19.04 from 2007 to 2009.
+
+Calculation:
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04",SLB,33.66,"To calculate the decrease in the average price per share from 2007 to 2009, we need to subtract the average price per share in 2009 from the average price per share in 2007.
+
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",2009.0,0,No match (diff 2032.0000)
+Single_AMT/2004/page_28.pdf-1_4,,for the quarter ended june 30 what was the percentage change in the share price from he lowest to the highest,43.8,44.61,1,Match (numeric),0.4051048755645752,43.72,1,Match (numeric),1.3299198150634766,(4.87 / 11.13) * 100 = 43.72%,<ANSWER>44.61%</ANSWER>,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price for June 30, 2004: $16.00
+Lowest price for June 30, 2004: $11.13
+
+Difference = $16.00 - $11.13 = $4.87
+
+Percentage Change = (Difference / Lowest Price) * 100
+Percentage Change = ($4.87 / $11.13) * 100
+
+<MATH>(4.87 / 11.13) * 100 = 43.72%</MATH>
+
+Therefore, the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, was 43.72%.",AMT,211.86,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price on June 30, 2004: $16.00
+Lowest price on June 30, 2004: $11.13
+
+Difference = $16.00 - $11.13 = $4.87
+
+Percentage Change = (Difference / Lowest Price) * 100
+Percentage Change = ($4.87 / $11.13) * 100
+
+<MATH>(4.87 / 11.13) * 100 = 43.72%</MATH>
+
+Therefore, the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, was 43.72%.",43.72,1,Match (numeric)
+Single_AMT/2015/page_50.pdf-2_1,,for the= quarter ended march 31 what was the percent of the change in the stock price from the highest to the lowest,9.3,14.38,0,No match (diff 5.0800),0.5334622859954834,8.5,0,No match (diff 0.8000),2.0143721103668213,,<ANSWER>14.38%</ANSWER>,"To calculate the percent change in the stock price from the highest to the lowest for the quarter ended March 31, 2015, we first need to find the difference between the high and low prices, then calculate the percentage change.
+
+High price for March 31, 2015: $101.88
+Low price for March 31, 2015: $93.21
+
+Difference = High price - Low price
+Difference = $101.88 - $93.21
+Difference = $8.67
+
+Percent Change = (Difference / High price) * 100
+Percent Change = ($8.67 / $101.88) * 100
+Percent Change ≈ 8.50%
+
+Therefore, the percent change in the stock price from the highest to the lowest for the quarter ended March 31, 2015, was approximately 8.50%.",AMT,211.86,"To calculate the percent change in the stock price from the highest to the lowest for the quarter ended March 31, 2015, we need to use the high and low prices provided in the table.
+
+High price for March 31, 2015: $101.88
+Low price for March 31, 2015: $93.21
+
+Percent change = ((High price - Low price) / High price) * 100
+Percent change = (($101.88 - $93.21) / $101.88) * 100
+Percent change = ($8.67 / $101.88) * 100
+Percent change = 0.0849 * 100
+Percent change = 8.49%
+
+Therefore, the percent change in the stock price from the highest to the lowest for the quarter ended March 31, 2015 was 8.49%.",8.49,0,No match (diff 0.8100)
+Single_AMT/2005/page_31.pdf-1_2,,what is the growth rate in the common stock price from the highest price during quarter ended december 31 of 2005 to the highest price during quarter ended december 31 of 2006?,51.1,2006.0,0,No match (diff 1954.9000),0.4959757328033447,5.29,0,No match (diff 45.8100),2.2052600383758545,,"<ANSWER>There is no data provided for the highest price during quarter ended December 31 of 2006, so the growth rate cannot be calculated.</ANSWER>","To calculate the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, we first need to find the prices for those quarters.
+
+The highest price during the quarter ended December 31, 2005, was $28.33.
+The highest price during the quarter ended December 31, 2006, was $29.83.
+
+Now, we can calculate the growth rate using the formula:
+
+Growth Rate = ((Ending Value - Beginning Value) / Beginning Value) * 100
+
+Growth Rate = (($29.83 - $28.33) / $28.33) * 100
+Growth Rate = ($1.50 / $28.33) * 100
+Growth Rate = 0.0529 * 100
+Growth Rate = 5.29%
+
+Therefore, the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, is 5.29%.",AMT,211.86,"To calculate the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, we need to find the percentage increase.
+
+Highest price during quarter ended December 31, 2005: $28.33
+Highest price during quarter ended December 31, 2006: $211.86
+
+Percentage Increase = [(New Price - Old Price) / Old Price] * 100
+Percentage Increase = [($211.86 - $28.33) / $28.33] * 100
+
+<MATH>[(211.86 - 28.33) / 28.33] * 100 = 647.51%</MATH>
+
+Therefore, the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, is 647.51%.",647.51,0,No match (diff 596.4100)
+Single_DVN/2011/page_26.pdf-1_3,,what was the average change in the share price from october to november,13.4,7.86,0,No match (diff 5.5400),0.3750476837158203,7.86,0,No match (diff 5.5400),0.901935338973999,,<ANSWER> $7.86 </ANSWER>,"To find the average change in share price from October to November, we need to calculate the difference in average price paid per share between the two months.
+
+Average price in October = $58.52
+Average price in November = $66.38
+
+Average change = Average price in November - Average price in October
+<AVERAGE CHANGE>=$66.38 - $58.52</AVERAGE CHANGE>
+<AVERAGE CHANGE>=$7.86</AVERAGE CHANGE>
+
+Therefore, the average change in the share price from October to November was $7.86.",DVN,31.16,"To calculate the average change in share price from October to November, we need to find the difference in average price paid per share between the two months.
+
+Average price in October = $58.52
+Average price in November = $66.38
+
+Change in average price = Average price in November - Average price in October
+Change in average price = $66.38 - $58.52
+Change in average price = $7.86
+
+Therefore, the average change in share price from October to November was $7.86.",7.86,0,No match (diff 5.5400)
+Single_DVN/2011/page_26.pdf-1_4,,what was the average change in the share price from october to november,13.4,7.86,0,No match (diff 5.5400),0.36711597442626953,7.86,0,No match (diff 5.5400),1.1377952098846436,,<ANSWER> $7.86 </ANSWER>,"The average change in share price from October to November can be calculated by subtracting the average price paid per share in October from the average price paid per share in November.
+
+Average price in November = $66.38
+Average price in October = $58.52
+
+Average change = $66.38 - $58.52 = $7.86
+
+Therefore, the average change in the share price from October to November was $7.86.",DVN,31.16,"To calculate the average change in share price from October to November, we need to find the difference in average price paid per share between the two months and then calculate the average change.
+
+Average price paid per share in October = $58.52
+Average price paid per share in November = $66.38
+
+Change in average price = $66.38 - $58.52 = $7.86
+
+Average change in share price = ($7.86) / 2 = $3.93
+
+Therefore, the average change in the share price from October to November was $3.93.",3.93,0,No match (diff 9.4700)
+Single_SLB/2009/page_46.pdf-3_3,,by how much did the average price per share decrease from 2007 to 2009?,-23.0,19.04,0,No match (diff 42.0400),0.6404924392700195,2009.0,0,No match (diff 2032.0000),0.8210749626159668,,The average price per share decreased by $19.04 from 2007 to 2009. ($82.95 - $63.91 = $19.04) <ANSWER>$19.04</ANSWER>.,"The average price per share decreased by $19.04 from 2007 to 2009.
+
+Calculation:
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",SLB,33.66,"To calculate the decrease in the average price per share from 2007 to 2009, we need to subtract the average price per share in 2009 from the average price per share in 2007.
+
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",2009.0,0,No match (diff 2032.0000)
+Single_AES/2003/page_48.pdf-1_0,,"in q1 2003 , what was the average of the high and low stock price?",3.38,3.38,1,Match (numeric),0.41843605041503906,3.38,1,Match (numeric),0.8055310249328613,$4.04 + $2.72,<ANSWER>$3.38</ANSWER>,"To find the average of the high and low stock price in Q1 2003, we add the high and low prices and divide by 2.
+
+High price in Q1 2003: $4.04
+Low price in Q1 2003: $2.72
+
+Average = (<MATH>$4.04 + $2.72</MATH>) / 2 = <ANSWER>$3.38</ANSWER>",AES,9.99,"To calculate the average of the high and low stock price in Q1 2003:
+
+High price in Q1 2003 = $4.04
+Low price in Q1 2003 = $2.72
+
+Average = (<MATH>4.04 + 2.72</MATH>) / 2 = <ANSWER>$3.38</ANSWER>
+
+Therefore, the average of the high and low stock price in Q1 2003 was $3.38.",6.76,0,No match (diff 3.3800)
+Single_AMT/2005/page_31.pdf-1_3,,what is the growth rate in the common stock price from the highest price during quarter ended december 31 of 2005 to the highest price during quarter ended december 31 of 2006?,51.1,2006.0,0,No match (diff 1954.9000),0.5213348865509033,5.29,0,No match (diff 45.8100),3.0923612117767334,,"<ANSWER>There is no data provided for the highest price during quarter ended December 31 of 2006, so the growth rate cannot be calculated.</ANSWER>","To calculate the growth rate in the common stock price from the highest price during quarter ended December 31 of 2005 to the highest price during quarter ended December 31 of 2006, we first need to find the highest price during quarter ended December 31 of 2006.
+
+From the table provided:
+- Highest price during quarter ended December 31, 2005 = $28.33
+- Highest price during quarter ended December 31, 2006 = $29.83
+
+Now, we can calculate the growth rate using the formula:
+Growth Rate = ((Ending Value - Beginning Value) / Beginning Value) * 100
+
+Plugging in the values:
+Growth Rate = (($29.83 - $28.33) / $28.33) * 100
+Growth Rate = ($1.50 / $28.33) * 100
+Growth Rate = 0.0529 * 100
+Growth Rate = 5.29%
+
+Therefore, the growth rate in the common stock price from the highest price during quarter ended December 31 of 2005 to the highest price during quarter ended December 31 of 2006 is 5.29%.",AMT,211.86,"To calculate the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, we need to find the percentage increase.
+
+Highest price during quarter ended December 31, 2005: $28.33
+Highest price during quarter ended December 31, 2006: $211.86
+
+Percentage increase = [(New Price - Old Price) / Old Price] * 100
+Percentage increase = [($211.86 - $28.33) / $28.33] * 100
+Percentage increase = [($183.53) / $28.33] * 100
+Percentage increase = 647.41%
+
+Therefore, the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, is 647.41%.",647.41,0,No match (diff 596.3100)
+Single_VLO/2017/page_28.pdf-3_1,,by what percentage did the share price increase from october to november 2017?,5.3,2017.0,0,No match (diff 2011.7000),0.4132695198059082,2017.0,0,No match (diff 2011.7000),1.4365761280059814,,<ANSWER>The share price increased by 5.23% from October to November 2017.</ANSWER>,"To calculate the percentage increase in share price from October to November 2017, we can use the following formula:
+
+Percentage Increase = ((New Price - Old Price) / Old Price) * 100
+
+In this case:
+- Old Price (October 2017) = $77.15
+- New Price (November 2017) = $81.21
+
+Percentage Increase = (($81.21 - $77.15) / $77.15) * 100
+Percentage Increase = (($4.06) / $77.15) * 100
+Percentage Increase = 0.0526 * 100
+Percentage Increase = 5.26%
+
+Therefore, the share price increased by 5.26% from October to November 2017.",VLO,128.55,"To calculate the percentage increase in share price from October to November 2017, we need to find the difference in average price paid per share between November and October, then divide that by the October price and multiply by 100 to get the percentage increase.
+
+Average price paid per share in November 2017 = $81.21
+Average price paid per share in October 2017 = $77.15
+
+Difference = $81.21 - $77.15 = $4.06
+
+Percentage increase = (<MATH> \frac{4.06}{77.15} </MATH>) * 100 = <ANSWER> 5.26% </ANSWER>
+
+Therefore, the share price increased by 5.26% from October to November 2017.",5.26,1,Match (numeric)
+Single_SLB/2009/page_46.pdf-3_2,,by how much did the average price per share decrease from 2007 to 2009?,-23.0,19.04,0,No match (diff 42.0400),0.7180492877960205,2009.0,0,No match (diff 2032.0000),0.793940544128418,,The average price per share decreased by $19.04 from 2007 to 2009. ($82.95 - $63.91 = $19.04) <ANSWER>$19.04</ANSWER>.,"The average price per share in 2007 was $82.95 and in 2009 was $63.91. To calculate the decrease:
+
+$82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",SLB,33.66,"To calculate the decrease in the average price per share from 2007 to 2009, we need to subtract the average price per share in 2009 from the average price per share in 2007.
+
+Average price per share in 2007: $82.95
+Average price per share in 2009: $63.91
+
+Decrease in average price per share from 2007 to 2009:
+$82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",2009.0,0,No match (diff 2032.0000)
+Single_VRTX/2006/page_112.pdf-1_1,,"what was the average price per share , in dollars , of the stock the company sold in august 2006?",14.3,14.34,1,Match (numeric),0.36617445945739746,14.3,1,Match (numeric),1.5034596920013428,,<ANSWER>$14.34</ANSWER>,"To find the average price per share of the stock the company sold in August 2006, we need to divide the total amount received from selling the shares by the total number of shares sold.
+
+Total amount received from selling the shares = $11.7 million
+Total number of shares sold = 817749
+
+Average price per share = Total amount received / Total number of shares sold
+Average price per share = $11,700,000 / 817749
+Average price per share = $14.30
+
+Therefore, the average price per share of the stock the company sold in August 2006 was $14.30.",VRTX,436.0,"To calculate the average price per share of the stock the company sold in August 2006, we need to divide the total amount received from the sale by the total number of shares sold.
+
+Total amount received from the sale = $11.7 million
+Total number of shares sold = 817749
+
+Average price per share = Total amount received from the sale / Total number of shares sold
+Average price per share = $11,700,000 / 817749
+Average price per share = $14.30
+
+Therefore, the average price per share of the stock the company sold in August 2006 was $14.30.",14.3,1,Match (numeric)
+Single_GPN/2008/page_88.pdf-2_1,,"what is the number of remaining shares under the repurchase authorization , assuming an average share price of $ 37.85?",343461.0,497.0,0,No match (diff 342964.0000),0.33889293670654297,245.0,0,No match (diff 343216.0000),1.8134751319885254,"13,000,000 / 37.85","<ANSWER>344,497 shares</ANSWER>","To calculate the number of remaining shares under the repurchase authorization, we first need to determine the total cost of the shares already repurchased. 
+
+Total cost of shares repurchased = 2.3 million shares * $37.85 per share = $87.0 million
+
+Therefore, the remaining amount available for repurchase is $100 million - $87.0 million = $13.0 million.
+
+Now, we can calculate the number of remaining shares under the repurchase authorization:
+
+Number of remaining shares = Remaining amount / Average share price
+Number of remaining shares = $13.0 million / $37.85 per share = <MATH>13,000,000 / 37.85</MATH> = <ANSWER>342,245 shares</ANSWER>",GPN,74.09,"Given that the average share price for the repurchase was $37.85, and the total cost of repurchasing 2.3 million shares was $87.0 million, we can calculate the number of remaining shares under the repurchase authorization as follows:
+
+Total cost of repurchasing 2.3 million shares = $87.0 million
+Average share price = $37.85
+
+Number of shares repurchased = Total cost / Average share price
+Number of shares repurchased = $87.0 million / $37.85
+Number of shares repurchased = 2,295,812 shares
+
+Total number of shares authorized for repurchase = 2.3 million shares
+Remaining shares under the repurchase authorization = Total authorized - Shares repurchased
+Remaining shares under the repurchase authorization = 2,300,000 - 2,295,812
+Remaining shares under the repurchase authorization = 4,188 shares
+
+Therefore, the number of remaining shares under the repurchase authorization, assuming an average share price of $37.85, is 4,188 shares.",188.0,0,No match (diff 343273.0000)
+Single_VRTX/2006/page_112.pdf-1_0,,"what was the average price per share , in dollars , of the stock the company sold in august 2006?",14.3,14.33,1,Match (numeric),0.4017605781555176,14.31,1,Match (numeric),1.4467623233795166,,<ANSWER>$14.33</ANSWER>,"To find the average price per share of the stock the company sold in August 2006, we need to divide the total amount received from the sale by the total number of shares sold.
+
+Total amount received from the sale = $11.7 million
+Total number of shares sold = 817749
+
+Average price per share = Total amount received from the sale / Total number of shares sold
+Average price per share = $11,700,000 / 817749
+Average price per share = $14.31
+
+Therefore, the average price per share of the stock the company sold in August 2006 was $14.31.",VRTX,436.0,"To calculate the average price per share of the stock the company sold in August 2006, we need to divide the total amount received from the sale by the total number of shares sold.
+
+Total amount received from the sale = $11.7 million
+Total number of shares sold = 817749
+
+Average price per share = Total amount received from the sale / Total number of shares sold
+Average price per share = $11,700,000 / 817749
+Average price per share = $14.31
+
+Therefore, the average price per share of the stock the company sold in August 2006 was $14.31.",14.31,1,Match (numeric)
+Single_PM/2017/page_25.pdf-2_0,,what is the growth rate in pmi's share price from 2014 to 2015?,13.4,13.7,1,Match (numeric),0.4200770854949951,13.33,1,Match (numeric),1.3553059101104736,,<ANSWER>13.70%</ANSWER>,"To calculate the growth rate in PMI's share price from 2014 to 2015, we use the formula:
+
+Growth Rate = ((Ending Value / Beginning Value) - 1) * 100
+
+Where:
+- Beginning Value (2014): $106.20
+- Ending Value (2015): $120.40
+
+Growth Rate = (($120.40 / $106.20) - 1) * 100
+<GROWTH_RATE=((120.40 / 106.20) - 1) * 100>
+<GROWTH_RATE=0.1333 * 100>
+<GROWTH_RATE=13.33%>
+
+Therefore, the growth rate in PMI's share price from 2014 to 2015 is 13.33%.",PM,178.19,"To calculate the growth rate in PMI's share price from 2014 to 2015, we can use the formula for growth rate:
+
+\[ \text{Growth Rate} = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{Number of Periods}}} - 1 \]
+
+Using the given values:
+- Beginning Value (2014): $106.20
+- Ending Value (2015): $120.40
+
+\[ \text{Growth Rate} = \left( \frac{120.40}{106.20} \right)^{\frac{1}{1}} - 1 \]
+
+\[ \text{Growth Rate} = \left(1.134 \right) - 1 \]
+
+\[ \text{Growth Rate} = 0.134 \]
+
+Therefore, the growth rate in PMI's share price from 2014 to 2015 is 13.4%.",13.4,1,Match (numeric)
+Single_SLB/2009/page_46.pdf-3_0,,by how much did the average price per share decrease from 2007 to 2009?,-23.0,19.04,0,No match (diff 42.0400),0.5745682716369629,2009.0,0,No match (diff 2032.0000),0.7783811092376709,,The average price per share decreased by $19.04 from 2007 to 2009. ($82.95 - $63.91 = $19.04) <ANSWER>$19.04</ANSWER>.,"The average price per share decreased by $19.04 from 2007 to 2009.
+
+Calculation:
+2007 average price per share = $82.95
+2009 average price per share = $63.91
+
+$82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",SLB,33.66,"To calculate the decrease in average price per share from 2007 to 2009, we need to subtract the average price per share in 2009 from the average price per share in 2007.
+
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",2009.0,0,No match (diff 2032.0000)
+Single_SLB/2009/page_46.pdf-4_2,,by how much did the average price per share decrease from 2007 to 2009?,-23.0,19.04,0,No match (diff 42.0400),0.6688327789306641,2009.0,0,No match (diff 2032.0000),0.8176326751708984,,The average price per share decreased by $19.04 from 2007 to 2009. ($82.95 - $63.91 = $19.04) <ANSWER>$19.04</ANSWER>.,"The average price per share decreased by $19.04 from 2007 to 2009.
+
+Calculation:
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+$82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",SLB,33.66,"To calculate the decrease in the average price per share from 2007 to 2009, we need to subtract the average price per share in 2009 from the average price per share in 2007.
+
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",2009.0,0,No match (diff 2032.0000)
+Single_IPG/2017/page_26.pdf-2_1,,what is the percentage decrease in average price per share from october to november?,8.92,9.09,1,Match (numeric),0.3385140895843506,8.92,1,Match (numeric),1.0644714832305908,,<ANSWER>9.09%</ANSWER>,"To calculate the percentage decrease in average price per share from October to November, we first need to find the difference in average price per share between the two months and then calculate the percentage decrease.
+
+Average price per share in October = $20.74
+Average price per share in November = $18.89
+
+Difference = $20.74 - $18.89 = $1.85
+
+Percentage decrease = (Difference / Average price per share in October) * 100
+Percentage decrease = ($1.85 / $20.74) * 100 = 8.92%
+
+Therefore, the percentage decrease in average price per share from October to November is 8.92%.",IPG,24.0,"To calculate the percentage decrease in average price per share from October to November, we first need to find the average price per share for each month.
+
+For October:
+Total value of shares purchased in October = 1231868 * $20.74 = $25,533,161.92
+Total withheld shares in October = 1474
+Average price per share in October = $25,533,161.92 / (1231868 - 1474) = $20.74
+
+For November:
+Total value of shares purchased in November = 1723139 * $18.89 = $32,570,124.71
+Total withheld shares in November = 893
+Average price per share in November = $32,570,124.71 / (1723139 - 893) = $18.89
+
+Now, we can calculate the percentage decrease:
+Percentage decrease = ((October average price - November average price) / October average price) * 100
+Percentage decrease = (($20.74 - $18.89) / $20.74) * 100 = 8.91%
+
+Therefore, the percentage decrease in average price per share from October to November is 8.91%.",8.91,1,Match (numeric)
+Single_CDNS/2012/page_58.pdf-1_2,,what is the percentage difference in the number of shares to be issued if the stock price closes at $ 11 compared to if it closes at $ 20?,278.0,236.67,0,No match (diff 41.3300),0.521808385848999,2277.78,0,No match (diff 1999.7800),1.4733068943023682,,<ANSWER>The percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is approximately 236.67%.</ANSWER>,"To find the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20, we first need to calculate the number of shares to be issued at each price point.
+
+At $11, the number of shares to be issued is 0.9 million.
+At $20, the number of shares to be issued is 21.4 million.
+
+The difference in the number of shares to be issued is 21.4 - 0.9 = 20.5 million.
+
+To find the percentage difference, we use the formula:
+Percentage Difference = (Difference / Initial Value) * 100
+
+Plugging in the values:
+Percentage Difference = (20.5 / 0.9) * 100
+Percentage Difference = 2277.78%
+
+Therefore, the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is 2277.78%.",CDNS,315.51,"To calculate the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20, we need to find the difference in the number of shares issued at $11 and $20, and then calculate the percentage difference.
+
+At $11, 0.9 million shares would be issued.
+At $20, 21.4 million shares would be issued.
+
+The difference in shares issued = 21.4 - 0.9 = 20.5 million shares
+
+Percentage difference = (Difference / Initial shares) * 100
+Percentage difference = (20.5 / 0.9) * 100 = 2277.78%
+
+Therefore, the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is 2277.78%.",2277.78,0,No match (diff 1999.7800)
+Single_AMT/2004/page_28.pdf-1_1,,for the quarter ended june 30 what was the percentage change in the share price from he lowest to the highest,43.8,44.34,1,Match (numeric),0.38777875900268555,43.74,1,Match (numeric),1.1712908744812012,,<ANSWER>44.34%</ANSWER>,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price for June 30, 2004: $16.00
+Lowest price for June 30, 2004: $11.13
+
+Difference = $16.00 - $11.13 = $4.87
+
+Percentage Change = (Difference / Lowest Price) * 100
+Percentage Change = ($4.87 / $11.13) * 100 = 43.74%
+
+Therefore, the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, was 43.74%.",AMT,211.86,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price for June 30, 2004: $16.00
+Lowest price for June 30, 2004: $11.13
+
+Difference: $16.00 - $11.13 = $4.87
+
+Percentage Change: (<MATH> \frac{4.87}{11.13} \times 100</MATH>)
+
+Percentage Change: <MATH> \frac{4.87}{11.13} \times 100 = 43.72\%</MATH>
+
+Therefore, the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, was 43.72%.",43.72,1,Match (numeric)
+Single_AMT/2004/page_28.pdf-1_3,,for the quarter ended june 30 what was the percentage change in the share price from he lowest to the highest,43.8,44.85,1,Match (numeric),0.3259875774383545,43.7,1,Match (numeric),1.2986371517181396,(4.87 / 11.13) * 100 = 43.7%,<ANSWER>44.85%</ANSWER>,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price for June 30, 2004: $16.00
+Lowest price for June 30, 2004: $11.13
+
+Difference = $16.00 - $11.13 = $4.87
+
+Percentage change = (Difference / Lowest price) * 100
+Percentage change = ($4.87 / $11.13) * 100
+
+<MATH>(4.87 / 11.13) * 100 = 43.7%</MATH>
+
+<ANSWER>43.7%</ANSWER>",AMT,211.86,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price on June 30, 2004: $16.00
+Lowest price on June 30, 2004: $11.13
+
+Difference = $16.00 - $11.13 = $4.87
+
+Percentage Change = (Difference / Lowest Price) * 100
+Percentage Change = ($4.87 / $11.13) * 100
+
+<MATH>(4.87 / 11.13) * 100 = 43.72%</MATH>
+
+Therefore, the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, was 43.72%.",43.72,1,Match (numeric)
+Single_GPN/2008/page_88.pdf-2_2,,"what is the number of remaining shares under the repurchase authorization , assuming an average share price of $ 37.85?",343461.0,874.0,0,No match (diff 342587.0000),0.3508448600769043,748.0,0,No match (diff 342713.0000),1.0612494945526123,"\frac{13,000,000}{37.85} = 342,748.0916","<ANSWER>343,874 shares</ANSWER>","To calculate the number of remaining shares under the repurchase authorization, we need to divide the remaining amount ($13.0 million) by the average share price ($37.85):
+
+<MATH>\frac{13,000,000}{37.85} = 342,748.0916</MATH>
+
+Therefore, the number of remaining shares under the repurchase authorization is approximately <ANSWER>342,748 shares</ANSWER>.",GPN,74.09,"To calculate the number of remaining shares under the repurchase authorization, we need to divide the remaining amount available for repurchase by the average share price.
+
+Remaining amount under repurchase authorization: $13.0 million
+Average share price: $37.85
+
+Number of remaining shares = $13,000,000 / $37.85 = 343,053 shares
+
+Therefore, the number of remaining shares under the repurchase authorization, assuming an average share price of $37.85, is 343,053 shares.",53.0,0,No match (diff 343408.0000)
+Single_MRO/2008/page_142.pdf-1_1,,by what percentage did the company's weighted average exercise price per share increase from 2006 to 2008?,36.7,2008.0,0,No match (diff 1971.3000),0.522075891494751,2008.0,0,No match (diff 1971.3000),1.4041118621826172,,<ANSWER>The company's weighted average exercise price per share increased by 36.5% from 2006 to 2008.</ANSWER>,"To calculate the percentage increase in the weighted average exercise price per share from 2006 to 2008, we use the formula:
+
+Percentage Increase = ((New Value - Old Value) / Old Value) * 100
+
+Plugging in the values:
+Old Value (2006) = $37.84
+New Value (2008) = $51.74
+
+Percentage Increase = (($51.74 - $37.84) / $37.84) * 100
+Percentage Increase = ($13.90 / $37.84) * 100
+Percentage Increase = 0.367 * 100
+Percentage Increase = 36.7%
+
+Therefore, the company's weighted average exercise price per share increased by 36.7% from 2006 to 2008.",MRO,28.55,"To calculate the percentage increase in the company's weighted average exercise price per share from 2006 to 2008, we need to subtract the 2006 price from the 2008 price, divide by the 2006 price, and then multiply by 100 to get the percentage increase.
+
+2006 weighted average exercise price per share: $37.84
+2008 weighted average exercise price per share: $51.74
+
+Percentage increase = ((51.74 - 37.84) / 37.84) * 100
+Percentage increase = (13.9 / 37.84) * 100
+Percentage increase = 0.3666 * 100
+Percentage increase = 36.66%
+
+Therefore, the company's weighted average exercise price per share increased by 36.66% from 2006 to 2008.",2008.0,0,No match (diff 1971.3000)
+Single_SLB/2009/page_46.pdf-3_4,,by how much did the average price per share decrease from 2007 to 2009?,-23.0,19.04,0,No match (diff 42.0400),0.5518715381622314,2009.0,0,No match (diff 2032.0000),0.7698996067047119,,The average price per share decreased by $19.04 from 2007 to 2009. ($82.95 - $63.91 = $19.04) <ANSWER>$19.04</ANSWER>.,"The average price per share decreased by $19.04 from 2007 to 2009.
+
+Calculation:
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+$82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",SLB,33.66,"To calculate the decrease in average price per share from 2007 to 2009, we need to subtract the average price per share in 2009 from the average price per share in 2007.
+
+Average price per share in 2007: $82.95
+Average price per share in 2009: $63.91
+
+Decrease in average price per share from 2007 to 2009:
+$82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",2009.0,0,No match (diff 2032.0000)
+Single_AMT/2015/page_50.pdf-2_0,,for the= quarter ended march 31 what was the percent of the change in the stock price from the highest to the lowest,9.3,14.04,0,No match (diff 4.7400),0.31512880325317383,8.49,0,No match (diff 0.8100),1.4612703323364258,,<ANSWER>14.04%</ANSWER>,"To calculate the percent change in the stock price from the highest to the lowest for the quarter ended March 31, 2015, we first need to find the difference between the high and low prices, then calculate the percentage change.
+
+High price for March 31, 2015: $101.88
+Low price for March 31, 2015: $93.21
+
+Difference = High price - Low price
+Difference = $101.88 - $93.21
+Difference = $8.67
+
+Percent change = (Difference / High price) * 100
+Percent change = ($8.67 / $101.88) * 100
+Percent change = 0.0849 * 100
+Percent change = 8.49%
+
+Therefore, the percent change in the stock price from the highest to the lowest for the quarter ended March 31, 2015 was 8.49%.",AMT,211.86,"To calculate the percent change in the stock price from the highest to the lowest for the quarter ended March 31, 2015, we first need to find the difference between the high and low prices, then calculate the percentage change.
+
+High price for March 31, 2015: $101.88
+Low price for March 31, 2015: $93.21
+
+Difference = High price - Low price
+Difference = $101.88 - $93.21
+Difference = $8.67
+
+Percent Change = (Difference / High price) * 100
+Percent Change = ($8.67 / $101.88) * 100
+Percent Change ≈ 8.49%
+
+Therefore, the percent change in the stock price from the highest to the lowest for the quarter ended March 31, 2015 was approximately 8.49%.",8.49,0,No match (diff 0.8100)
+Single_PM/2017/page_25.pdf-1_2,,what is the growth rate in pmi's share price from 2012 to 2013?,8.5,8.5,1,Match (numeric),0.4805126190185547,8.5,1,Match (numeric),1.3513524532318115,,<ANSWER>The growth rate in PMI's share price from 2012 to 2013 is 8.5%.</ANSWER>,"To calculate the growth rate in PMI's share price from 2012 to 2013, we use the formula:
+
+\[ \text{Growth Rate} = \left( \frac{\text{Ending Value} - \text{Beginning Value}}{\text{Beginning Value}} \right) \times 100\% \]
+
+Plugging in the values:
+\[ \text{Growth Rate} = \left( \frac{108.50 - 100.00}{100.00} \right) \times 100\% \]
+\[ \text{Growth Rate} = \left( \frac{8.50}{100.00} \right) \times 100\% \]
+\[ \text{Growth Rate} = 0.085 \times 100\% \]
+\[ \text{Growth Rate} = 8.5\% \]
+
+Therefore, the growth rate in PMI's share price from 2012 to 2013 is 8.5%.",PM,178.19,"To calculate the growth rate in PMI's share price from 2012 to 2013, we can use the formula for calculating the annual growth rate:
+
+Annual Growth Rate = [(Ending Value / Beginning Value) ^ (1 / Number of Years)] - 1
+
+Plugging in the values:
+Beginning Value (2012) = $100.00
+Ending Value (2013) = $108.50
+Number of Years = 1
+
+Annual Growth Rate = [($108.50 / $100.00) ^ (1 / 1)] - 1
+Annual Growth Rate = [1.085] - 1
+Annual Growth Rate = 0.085 or 8.5%
+
+Therefore, the growth rate in PMI's share price from 2012 to 2013 is 8.5%.",8.5,1,Match (numeric)
+Single_VLO/2017/page_28.pdf-3_2,,by what percentage did the share price increase from october to november 2017?,5.3,5.24,1,Match (numeric),0.3507859706878662,2017.0,0,No match (diff 2011.7000),1.3783583641052246,,<ANSWER>5.24%</ANSWER>,"To calculate the percentage increase in share price from October to November 2017, we can use the formula:
+
+Percentage Increase = ((New Price - Old Price) / Old Price) * 100
+
+Given:
+- Average price paid per share in October 2017 = $77.15
+- Average price paid per share in November 2017 = $81.21
+
+Using the formula:
+
+Percentage Increase = (($81.21 - $77.15) / $77.15) * 100
+Percentage Increase = ($4.06 / $77.15) * 100
+Percentage Increase = 0.0526 * 100
+Percentage Increase = 5.26%
+
+Therefore, the share price increased by 5.26% from October to November 2017.",VLO,128.55,"To calculate the percentage increase in share price from October to November 2017, we need to find the difference in average price paid per share between November and October, divide that by the October average price, and then multiply by 100 to get the percentage increase.
+
+Average price paid per share in November 2017 = $81.21
+Average price paid per share in October 2017 = $77.15
+
+Difference = $81.21 - $77.15 = $4.06
+
+Percentage increase = (<MATH> \frac{4.06}{77.15} </MATH>) * 100 = <ANSWER> 5.26% </ANSWER>
+
+Therefore, the share price increased by 5.26% from October to November 2017.",5.26,1,Match (numeric)
+Single_SLB/2009/page_46.pdf-4_1,,by how much did the average price per share decrease from 2007 to 2009?,-23.0,19.04,0,No match (diff 42.0400),0.5602161884307861,19.04,0,No match (diff 42.0400),1.028015375137329,,The average price per share decreased by $19.04 from 2007 to 2009. ($82.95 - $63.91 = $19.04) <ANSWER>$19.04</ANSWER>.,"The average price per share decreased by $19.04 from 2007 to 2009.
+
+Calculation:
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04",SLB,33.66,"To calculate the decrease in average price per share from 2007 to 2009, we need to subtract the average price per share in 2009 from the average price per share in 2007.
+
+Average price per share in 2007: $82.95
+Average price per share in 2009: $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",2009.0,0,No match (diff 2032.0000)
+Single_IPG/2014/page_95.pdf-3_1,,"with 2014 closing stock price , what is the total value of the award for the additional shares , ( in millions ) ?",56.5,56.5,1,Match (numeric),0.3554060459136963,56.54,1,Match (numeric),1.1002237796783447,,<ANSWER>$56.5 million</ANSWER>,"To calculate the total value of the award for the additional shares, we need to multiply the number of additional shares by the closing stock price in 2014. 
+
+Number of additional shares = 2,721,405
+Closing stock price in 2014 = $20.77
+
+Total value of the award for the additional shares = 2,721,405 * $20.77 = $56,535,440.85
+
+Converting this to millions, the total value of the award for the additional shares is approximately $56.54 million.",IPG,24.0,"Given that the 2014 closing stock price was $20.77 and the additional shares represent rights to 2,721,405 shares, we can calculate the total value of the award for the additional shares as follows:
+
+Total value = 2,721,405 shares * $20.77/share = $56,554,536.85
+
+Converting this total value to millions, we get:
+
+Total value in millions = $56,554,536.85 / $1,000,000 = $56.55 million
+
+Therefore, the total value of the award for the additional shares is $56.55 million.",56.55,1,Match (numeric)
+Single_PPG/2011/page_46.pdf-2_2,,"what would the remaining cost to repurchase shares under the october 2009 agreement be assuming the december 31 , 2009 weighted average share price ?",5666000.0,62.326,0,No match (diff 5665937.6740),0.3748936653137207,5.66,0,No match (diff 5665994.3400),1.408496618270874,,<ANSWER>$ 62.326 million</ANSWER>,"To calculate the remaining cost to repurchase shares under the October 2009 agreement, we need to find the number of shares remaining to be repurchased and then multiply it by the weighted average share price as of December 31, 2009.
+
+Number of shares remaining to be repurchased = Total shares agreed to be repurchased - Shares already repurchased
+Number of shares remaining to be repurchased = 1.2 million - 1.1 million
+Number of shares remaining to be repurchased = 0.1 million
+
+Remaining cost to repurchase shares = Number of shares remaining to be repurchased * Weighted average share price as of December 31, 2009
+Remaining cost to repurchase shares = 0.1 million * $56.66
+Remaining cost to repurchase shares = $5.66 million
+
+Therefore, the remaining cost to repurchase shares under the October 2009 agreement would be $5.66 million.",PPG,110.08,"To calculate the remaining cost to repurchase shares under the October 2009 agreement, we first need to determine the number of shares remaining to be repurchased. 
+
+The total number of shares agreed to be repurchased was 1.2 million shares. Out of these, 1.1 million shares were purchased in the open market by December 31, 2009. Therefore, the remaining shares to be repurchased would be:
+1.2 million - 1.1 million = 0.1 million shares
+
+Given that the weighted average price of the shares purchased by December 31, 2009 was $56.66 per share, we can calculate the remaining cost to repurchase the remaining shares:
+0.1 million shares * $56.66 = $5,666,000
+
+Therefore, the remaining cost to repurchase shares under the October 2009 agreement would be $5,666,000.",0.0,0,No match (diff 5666000.0000)
+Single_PM/2017/page_25.pdf-1_0,,what is the growth rate in pmi's share price from 2012 to 2013?,8.5,8.5,1,Match (numeric),0.4021902084350586,8.5,1,Match (numeric),1.6940603256225586,,<ANSWER>The growth rate in PMI's share price from 2012 to 2013 is 8.5%.</ANSWER>,"To calculate the growth rate in PMI's share price from 2012 to 2013, we use the formula:
+
+\[ \text{Growth Rate} = \left( \frac{\text{Ending Value} - \text{Beginning Value}}{\text{Beginning Value}} \right) \times 100\% \]
+
+Plugging in the values for PMI's share price:
+
+\[ \text{Growth Rate} = \left( \frac{108.50 - 100.00}{100.00} \right) \times 100\% \]
+
+\[ \text{Growth Rate} = \left( \frac{8.50}{100.00} \right) \times 100\% \]
+
+\[ \text{Growth Rate} = 0.085 \times 100\% \]
+
+\[ \text{Growth Rate} = 8.5\% \]
+
+Therefore, the growth rate in PMI's share price from 2012 to 2013 is 8.5%.",PM,178.19,"To calculate the growth rate in PMI's share price from 2012 to 2013, we can use the formula for calculating the annual growth rate:
+
+Annual Growth Rate = [(Ending Value / Beginning Value) ^ (1 / Number of Years)] - 1
+
+Given:
+Beginning Value (2012) = $100.00
+Ending Value (2013) = $108.50
+Number of Years = 1
+
+Plugging in the values:
+
+Annual Growth Rate = [($108.50 / $100.00) ^ (1 / 1)] - 1
+Annual Growth Rate = [1.085] - 1
+Annual Growth Rate = 0.085 or 8.5%
+
+Therefore, the growth rate in PMI's share price from 2012 to 2013 is 8.5%.",8.5,1,Match (numeric)
+Single_IPG/2014/page_95.pdf-3_3,,"with 2014 closing stock price , what is the total value of the award for the additional shares , ( in millions ) ?",56.5,56.5,1,Match (numeric),0.6944906711578369,56.53,1,Match (numeric),1.9258902072906494,,<ANSWER>$56.5 million</ANSWER>,"To calculate the total value of the award for the additional shares, we first need to determine the number of additional shares and then multiply it by the 2014 closing stock price.
+
+Given:
+- Number of additional shares: 2,721,405
+- 2014 closing stock price: $20.77
+
+Total value of the award for the additional shares = Number of additional shares * 2014 closing stock price
+Total value of the award for the additional shares = 2,721,405 * $20.77 = $56,529,477.85
+
+Converting the total value to millions:
+Total value of the award for the additional shares = $56,529,477.85 / 1,000,000 = $56.53 million
+
+Therefore, the total value of the award for the additional shares is $56.53 million.",IPG,24.0,"To calculate the total value of the award for the additional shares in millions, we first need to determine the number of additional shares and then multiply it by the closing stock price.
+
+Given:
+- Number of additional shares: 2,721,405
+- Closing stock price in 2014: $20.77
+- Current market price: $24
+
+First, calculate the total value of the award for the additional shares in 2014:
+Total value = Number of additional shares * Closing stock price
+Total value = 2,721,405 * $20.77
+
+Now, calculate the total value of the award for the additional shares with the current market price:
+Total value = 2,721,405 * $24
+
+Now, let's calculate both values:
+
+Total value in 2014 = 2,721,405 * $20.77 = $56,546,992.85
+Total value with current market price = 2,721,405 * $24 = $65,123,320
+
+Therefore, the total value of the award for the additional shares in millions is $65.12 million with the current market price.",65.12,0,No match (diff 8.6200)
+Single_AMT/2005/page_31.pdf-1_1,,what is the growth rate in the common stock price from the highest price during quarter ended december 31 of 2005 to the highest price during quarter ended december 31 of 2006?,51.1,4.96,0,No match (diff 46.1400),0.7022955417633057,5.29,0,No match (diff 45.8100),1.7511041164398193,,"<ANSWER>The growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, is 4.96%.</ANSWER>","To calculate the growth rate in the common stock price from the highest price during quarter ended December 31 of 2005 to the highest price during quarter ended December 31 of 2006, we first need to find the prices for both periods.
+
+The highest price during quarter ended December 31 of 2005 was $28.33.
+The highest price during quarter ended December 31 of 2006 was $29.83.
+
+Now, we can calculate the growth rate using the formula:
+
+Growth Rate = ((Ending Value - Beginning Value) / Beginning Value) * 100
+
+Plugging in the values:
+
+Growth Rate = (($29.83 - $28.33) / $28.33) * 100
+Growth Rate = ($1.50 / $28.33) * 100
+Growth Rate = 0.0529 * 100
+Growth Rate = 5.29%
+
+Therefore, the growth rate in the common stock price from the highest price during quarter ended December 31 of 2005 to the highest price during quarter ended December 31 of 2006 is 5.29%.",AMT,211.86,"To calculate the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, we first need to find the prices for those quarters.
+
+From the table provided:
+- Highest price during quarter ended December 31, 2005: $28.33
+- Highest price during quarter ended December 31, 2006: $29.83
+
+Now, we can calculate the growth rate using the formula:
+
+\[ \text{Growth Rate} = \left( \frac{\text{Ending Price} - \text{Beginning Price}}{\text{Beginning Price}} \right) \times 100\% \]
+
+Plugging in the values:
+\[ \text{Growth Rate} = \left( \frac{29.83 - 28.33}{28.33} \right) \times 100\% \]
+\[ \text{Growth Rate} = \left( \frac{1.50}{28.33} \right) \times 100\% \]
+\[ \text{Growth Rate} = 0.0529 \times 100\% \]
+\[ \text{Growth Rate} = 5.29\% \]
+
+Therefore, the growth rate in the common stock price from the highest price during the quarter ended December 31, 2005, to the highest price during the quarter ended December 31, 2006, is 5.29%.",5.29,0,No match (diff 45.8100)
+Single_DVN/2011/page_26.pdf-1_1,,what was the average change in the share price from october to november,13.4,7.86,0,No match (diff 5.5400),0.31038808822631836,7.86,0,No match (diff 5.5400),1.1654667854309082,,<ANSWER> $7.86 </ANSWER>,"To find the average change in share price from October to November, we need to calculate the difference in average price paid per share between the two months.
+
+Average price in October = $58.52
+Average price in November = $66.38
+
+Average change = Average price in November - Average price in October
+Average change = $66.38 - $58.52 = $7.86
+
+Therefore, the average change in the share price from October to November was $7.86.",DVN,31.16,"To calculate the average change in share price from October to November, we need to find the difference in average price paid per share between the two months.
+
+Average price paid per share in October = $58.52
+Average price paid per share in November = $66.38
+
+Change in share price = November average price - October average price
+Change in share price = $66.38 - $58.52
+Change in share price = $7.86
+
+Therefore, the average change in share price from October to November was $7.86.",7.86,0,No match (diff 5.5400)
+Single_PM/2017/page_25.pdf-2_1,,what is the growth rate in pmi's share price from 2014 to 2015?,13.4,13.77,1,Match (numeric),0.4649221897125244,13.38,1,Match (numeric),1.3751232624053955,,<ANSWER>The growth rate in PMI's share price from 2014 to 2015 is 13.77%.</ANSWER>,"To calculate the growth rate in PMI's share price from 2014 to 2015, we use the formula:
+
+Growth Rate = ((Ending Value / Beginning Value) - 1) * 100
+
+Where:
+- Beginning Value (2014) = $106.20
+- Ending Value (2015) = $120.40
+
+Growth Rate = (($120.40 / $106.20) - 1) * 100
+<GROWTH_RATE=((120.40 / 106.20) - 1) * 100>
+<GROWTH_RATE=(1.1338 - 1) * 100>
+<GROWTH_RATE=0.1338 * 100>
+<GROWTH_RATE=13.38>
+
+Therefore, the growth rate in PMI's share price from 2014 to 2015 is 13.38%.",PM,178.19,"To calculate the growth rate in PMI's share price from 2014 to 2015, we can use the formula for percentage change:
+
+Percentage Change = ((Ending Value - Beginning Value) / Beginning Value) * 100
+
+Using the values from the table:
+Beginning Value (2014): $106.20
+Ending Value (2015): $120.40
+
+Percentage Change = (($120.40 - $106.20) / $106.20) * 100
+Percentage Change = ($14.20 / $106.20) * 100
+Percentage Change = 0.1337 * 100
+Percentage Change = 13.37%
+
+Therefore, the growth rate in PMI's share price from 2014 to 2015 is 13.37%.",13.37,1,Match (numeric)
+Single_RCL/2009/page_90.pdf-4_1,,what was the percent of the increase in the expected stock price volatility from 2008 to 2009,75.2,23.6,0,No match (diff 51.6000),0.4443199634552002,75.16,1,Match (numeric),1.2540779113769531,,<ANSWER>23.6%</ANSWER>,"The percent increase in expected stock price volatility from 2008 to 2009 can be calculated using the formula:
+
+Percent Increase = ((New Value - Old Value) / Old Value) * 100
+
+Plugging in the values:
+New Value (2009) = 55.0%
+Old Value (2008) = 31.4%
+
+Percent Increase = ((55.0 - 31.4) / 31.4) * 100
+Percent Increase = (23.6 / 31.4) * 100
+Percent Increase = 0.7516 * 100
+Percent Increase = 75.16%
+
+Therefore, the percent increase in the expected stock price volatility from 2008 to 2009 was 75.16%.",RCL,240.12,"To calculate the percent increase in expected stock price volatility from 2008 to 2009, we need to find the difference in volatility between the two years and then calculate the percentage increase.
+
+Expected stock price volatility in 2008 = 31.4%
+Expected stock price volatility in 2009 = 55.0%
+
+Difference = 55.0% - 31.4% = 23.6%
+
+Percent increase = (23.6% / 31.4%) * 100% = 75.16%
+
+Therefore, the percent increase in expected stock price volatility from 2008 to 2009 was approximately 75.16%.",75.16,1,Match (numeric)
+Single_MRO/2008/page_142.pdf-1_2,,by what percentage did the company's weighted average exercise price per share increase from 2006 to 2008?,36.7,58.6,0,No match (diff 21.9000),0.32184457778930664,2008.0,0,No match (diff 1971.3000),1.3047621250152588,,<ANSWER>58.6%</ANSWER>,"To calculate the percentage increase in the company's weighted average exercise price per share from 2006 to 2008, we use the formula:
+
+Percentage Increase = ((New Value - Old Value) / Old Value) * 100
+
+Plugging in the values:
+Old Value (2006) = $37.84
+New Value (2008) = $51.74
+
+Percentage Increase = (($51.74 - $37.84) / $37.84) * 100
+Percentage Increase = ($13.90 / $37.84) * 100
+Percentage Increase = 0.367 * 100
+Percentage Increase = 36.7%
+
+Therefore, the company's weighted average exercise price per share increased by 36.7% from 2006 to 2008.",MRO,28.55,"To calculate the percentage increase in the company's weighted average exercise price per share from 2006 to 2008, we need to subtract the exercise price in 2006 from the exercise price in 2008, divide by the exercise price in 2006, and then multiply by 100 to get the percentage increase.
+
+Exercise price in 2006 = $37.84
+Exercise price in 2008 = $51.74
+
+Percentage Increase = ((Exercise price in 2008 - Exercise price in 2006) / Exercise price in 2006) * 100
+Percentage Increase = (($51.74 - $37.84) / $37.84) * 100
+Percentage Increase = ($13.90 / $37.84) * 100
+Percentage Increase = 0.367 * 100
+Percentage Increase = 36.7%
+
+Therefore, the company's weighted average exercise price per share increased by 36.7% from 2006 to 2008.",2008.0,0,No match (diff 1971.3000)
+Single_SLB/2009/page_46.pdf-4_0,,by how much did the average price per share decrease from 2007 to 2009?,-23.0,19.04,0,No match (diff 42.0400),0.5368635654449463,2009.0,0,No match (diff 2032.0000),0.9308717250823975,,The average price per share decreased by $19.04 from 2007 to 2009. ($82.95 - $63.91 = $19.04) <ANSWER>$19.04</ANSWER>.,"The average price per share decreased by $19.04 from 2007 to 2009.
+
+Calculation:
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",SLB,33.66,"To calculate the decrease in the average price per share from 2007 to 2009, we need to subtract the average price per share in 2009 from the average price per share in 2007.
+
+Average price per share in 2007 = $82.95
+Average price per share in 2009 = $63.91
+
+Decrease in average price per share = $82.95 - $63.91 = $19.04
+
+Therefore, the average price per share decreased by $19.04 from 2007 to 2009.",2009.0,0,No match (diff 2032.0000)
+Single_IPG/2017/page_26.pdf-2_3,,what is the percentage decrease in average price per share from october to november?,8.92,4.58,0,No match (diff 4.3400),0.322509765625,8.91,1,Match (numeric),1.3455357551574707,(1.85 / 20.74) * 100 = 8.91%,<ANSWER>4.58%</ANSWER>,"To calculate the percentage decrease in average price per share from October to November, we first need to find the difference in average price per share between the two months.
+
+Average price per share in October = $20.74
+Average price per share in November = $18.89
+
+Difference = $20.74 - $18.89 = $1.85
+
+Next, we calculate the percentage decrease:
+
+Percentage decrease = (Difference / Average price per share in October) * 100
+Percentage decrease = ($1.85 / $20.74) * 100
+
+<MATH>(1.85 / 20.74) * 100 = 8.91%</MATH>
+
+Therefore, the percentage decrease in average price per share from October to November is 8.91%.",IPG,24.0,"To calculate the percentage decrease in average price per share from October to November, we first need to find the average price per share for each month.
+
+For October:
+Total value of shares purchased = 1231868 * $20.74 = $25,533,257.92
+Total number of shares purchased = 1231868
+
+Average price per share for October = Total value of shares purchased / Total number of shares purchased
+Average price per share for October = $25,533,257.92 / 1231868
+Average price per share for October = $20.74
+
+For November:
+Total value of shares purchased = 1723139 * $18.89 = $32,558,202.71
+Total number of shares purchased = 1723139
+
+Average price per share for November = Total value of shares purchased / Total number of shares purchased
+Average price per share for November = $32,558,202.71 / 1723139
+Average price per share for November = $18.89
+
+Now, we can calculate the percentage decrease:
+
+Percentage decrease = ((October average price - November average price) / October average price) * 100
+Percentage decrease = (($20.74 - $18.89) / $20.74) * 100
+Percentage decrease = ($1.85 / $20.74) * 100
+Percentage decrease = 0.089 * 100
+Percentage decrease = 8.9%
+
+Therefore, the percentage decrease in average price per share from October to November is 8.9%.",8.9,1,Match (numeric)
+Single_CDNS/2012/page_58.pdf-1_1,,what is the percentage difference in the number of shares to be issued if the stock price closes at $ 11 compared to if it closes at $ 20?,278.0,237.78,0,No match (diff 40.2200),0.7192096710205078,2277.78,0,No match (diff 1999.7800),1.2780215740203857,(20.5 / 0.9) * 100 = 2277.78%,<ANSWER>The percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is approximately 237.78%.</ANSWER>,"To find the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20, we first need to calculate the number of shares to be issued at each price point.
+
+At $11, 0.9 million shares will be issued.
+At $20, 21.4 million shares will be issued.
+
+The difference in the number of shares issued:
+21.4 - 0.9 = 20.5 million shares
+
+Now, we can calculate the percentage difference:
+Percentage difference = (Difference / Initial value) * 100
+Percentage difference = (20.5 / 0.9) * 100
+
+<MATH>(20.5 / 0.9) * 100 = 2277.78%</MATH>
+
+Therefore, the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is 2277.78%.",CDNS,315.51,"To calculate the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20, we first need to find the difference in the number of shares issued at these two prices.
+
+At $11, 0.9 million shares would be issued.
+At $20, 21.4 million shares would be issued.
+
+The difference in the number of shares issued:
+21.4 - 0.9 = 20.5 million shares
+
+Next, we calculate the percentage difference:
+Percentage difference = (Difference / Initial value) * 100
+Percentage difference = (20.5 / 0.9) * 100
+
+<MATH>(20.5 / 0.9) * 100 = 2277.78</MATH>
+
+Therefore, the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is approximately 2277.78%.",2277.78,0,No match (diff 1999.7800)
+Single_IPG/2014/page_95.pdf-3_2,,"with 2014 closing stock price , what is the total value of the award for the additional shares , ( in millions ) ?",56.5,56.5,1,Match (numeric),0.3790593147277832,56.54,1,Match (numeric),1.1123273372650146,,<ANSWER>$56.5 million</ANSWER>,"To calculate the total value of the award for the additional shares, we need to multiply the number of additional shares by the closing stock price in 2014.
+
+Number of additional shares = 2,721,405
+Closing stock price in 2014 = $20.77
+
+Total value of the award for the additional shares = 2,721,405 * $20.77 = $56,535,678.85
+
+Converting this amount to millions, we get $56,535,678.85 / 1,000,000 = $56.54 million. 
+
+Therefore, the total value of the award for the additional shares is $56.54 million.",IPG,24.0,"To calculate the total value of the award for the additional shares in millions, we first need to determine the total number of additional shares and then multiply it by the closing stock price.
+
+Given:
+- Number of additional shares: 2,721,405
+- Closing stock price in 2014: $20.77
+- Current market price: $24
+
+Total value of the award for additional shares = Number of additional shares * Current market price
+Total value = 2,721,405 * $24 = $65,322,120
+
+Therefore, the total value of the award for the additional shares is $65,322,120 in millions.",120.0,0,No match (diff 63.5000)
+Single_VLO/2017/page_28.pdf-3_4,,by what percentage did the share price increase from october to november 2017?,5.3,5.25,1,Match (numeric),0.3443000316619873,2017.0,0,No match (diff 2011.7000),1.1329460144042969,,<ANSWER>5.25%</ANSWER>,"To calculate the percentage increase in share price from October to November 2017, we can use the formula:
+
+Percentage Increase = ((New Price - Old Price) / Old Price) * 100
+
+In this case:
+- Old Price (October 2017) = $77.15
+- New Price (November 2017) = $81.21
+
+Percentage Increase = (($81.21 - $77.15) / $77.15) * 100
+Percentage Increase = ($4.06 / $77.15) * 100
+Percentage Increase = 0.0526 * 100
+Percentage Increase = 5.26%
+
+Therefore, the share price increased by 5.26% from October to November 2017.",VLO,128.55,"To calculate the percentage increase in share price from October to November 2017, we need to find the difference in average price paid per share between November and October, then divide that by the October price and multiply by 100 to get the percentage increase.
+
+Average price in November 2017 = $81.21
+Average price in October 2017 = $77.15
+
+Difference = $81.21 - $77.15 = $4.06
+
+Percentage increase = (<MATH> \frac{4.06}{77.15} </MATH>) * 100 = <ANSWER>5.26%</ANSWER>
+
+Therefore, the share price increased by 5.26% from October to November 2017.",5.26,1,Match (numeric)
+Single_GPN/2008/page_88.pdf-2_0,,"what is the number of remaining shares under the repurchase authorization , assuming an average share price of $ 37.85?",343461.0,643.0,0,No match (diff 342818.0000),0.390392541885376,367.0,0,No match (diff 343094.0000),1.5146300792694092,,"<ANSWER>343,643 shares</ANSWER>","To calculate the number of remaining shares under the repurchase authorization, we first need to determine the total cost of the shares already repurchased. 
+
+Total cost of shares repurchased = $87.0 million
+Average share price = $37.85
+
+Number of shares repurchased = Total cost of shares repurchased / Average share price
+Number of shares repurchased = $87.0 million / $37.85 = 2,297,633 shares
+
+Remaining under the repurchase authorization = Total authorized shares - Number of shares repurchased
+Remaining under the repurchase authorization = 2,300,000 - 2,297,633 = 2,367 shares
+
+Therefore, the number of remaining shares under the repurchase authorization is 2,367 shares.",GPN,74.09,"To calculate the number of remaining shares under the repurchase authorization, we first need to determine the total amount spent on repurchasing shares:
+
+Total amount spent = Number of shares repurchased x Average share price
+Total amount spent = 2.3 million shares x $37.85
+Total amount spent = $87.0 million
+
+Now, we can calculate the number of remaining shares under the repurchase authorization:
+
+Remaining amount for repurchase = Total authorization - Total amount spent
+Remaining amount for repurchase = $100 million - $87.0 million
+Remaining amount for repurchase = $13.0 million
+
+Number of remaining shares = Remaining amount for repurchase / Average share price
+Number of remaining shares = $13.0 million / $37.85
+Number of remaining shares = 342,892 shares
+
+Therefore, the number of remaining shares under the repurchase authorization, assuming an average share price of $37.85, is 342,892 shares.",892.0,0,No match (diff 342569.0000)
+Single_AMT/2004/page_28.pdf-1_0,,for the quarter ended june 30 what was the percentage change in the share price from he lowest to the highest,43.8,44.57,1,Match (numeric),0.3663136959075928,43.73,1,Match (numeric),1.3117754459381104,(4.87 / 11.13) * 100 = 43.73%,<ANSWER>44.57%</ANSWER>,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price for June 30, 2004: $16.00
+Lowest price for June 30, 2004: $11.13
+
+Difference = $16.00 - $11.13 = $4.87
+
+Percentage Change = (Difference / Lowest Price) * 100
+Percentage Change = ($4.87 / $11.13) * 100
+
+<MATH>(4.87 / 11.13) * 100 = 43.73%</MATH>
+
+<ANSWER>43.73%</ANSWER>",AMT,211.86,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price for June 30, 2004: $16.00
+Lowest price for June 30, 2004: $11.13
+
+Difference = $16.00 - $11.13 = $4.87
+
+Percentage Change = (Difference / Lowest Price) * 100
+Percentage Change = ($4.87 / $11.13) * 100
+
+<MATH>(4.87 / 11.13) * 100 = 43.72%</MATH>
+
+Therefore, the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, was approximately 43.72%.",43.72,1,Match (numeric)
+Single_IPG/2017/page_26.pdf-2_2,,what is the percentage decrease in average price per share from october to november?,8.92,4.5,0,No match (diff 4.4200),0.3998093605041504,8.92,1,Match (numeric),1.3505170345306396,(1.85 / 20.74) * 100 = 8.92%,<ANSWER>4.50%</ANSWER>,"To calculate the percentage decrease in average price per share from October to November, we first need to find the difference in average price per share between the two months.
+
+Average price per share in October = $20.74
+Average price per share in November = $18.89
+
+Difference = $20.74 - $18.89 = $1.85
+
+Next, we calculate the percentage decrease:
+
+Percentage decrease = (Difference / Average price per share in October) * 100
+Percentage decrease = ($1.85 / $20.74) * 100
+
+<MATH>(1.85 / 20.74) * 100 = 8.92%</MATH>
+
+Therefore, the percentage decrease in average price per share from October to November is 8.92%.",IPG,24.0,"To calculate the percentage decrease in average price per share from October to November, we first need to find the average price per share for each month.
+
+For October:
+Total value of shares purchased in October = 1231868 * $20.74 = $25,525,791.92
+Total number of shares purchased in October = 1231868
+
+Average price per share for October = Total value of shares purchased in October / Total number of shares purchased in October
+Average price per share for October = $25,525,791.92 / 1231868
+Average price per share for October = $20.74
+
+For November:
+Total value of shares purchased in November = 1723139 * $18.89 = $32,558,960.71
+Total number of shares purchased in November = 1723139
+
+Average price per share for November = Total value of shares purchased in November / Total number of shares purchased in November
+Average price per share for November = $32,558,960.71 / 1723139
+Average price per share for November = $18.89
+
+Now, we can calculate the percentage decrease:
+Percentage decrease = ((Average price per share for October - Average price per share for November) / Average price per share for October) * 100
+Percentage decrease = (($20.74 - $18.89) / $20.74) * 100
+Percentage decrease = ($1.85 / $20.74) * 100
+Percentage decrease = 0.0891 * 100
+Percentage decrease = 8.91%
+
+Therefore, the percentage decrease in average price per share from October to November is 8.91%.",8.91,1,Match (numeric)
+Single_PM/2017/page_25.pdf-1_1,,what is the growth rate in pmi's share price from 2012 to 2013?,8.5,8.5,1,Match (numeric),0.5302410125732422,8.5,1,Match (numeric),1.3631863594055176,,<ANSWER>The growth rate in PMI's share price from 2012 to 2013 is 8.5%.</ANSWER>,"To calculate the growth rate in PMI's share price from 2012 to 2013, we use the formula:
+
+\[ \text{Growth Rate} = \left( \frac{\text{Ending Value} - \text{Beginning Value}}{\text{Beginning Value}} \right) \times 100 \]
+
+Plugging in the values:
+\[ \text{Growth Rate} = \left( \frac{108.50 - 100.00}{100.00} \right) \times 100 \]
+\[ \text{Growth Rate} = \left( \frac{8.50}{100.00} \right) \times 100 \]
+\[ \text{Growth Rate} = 0.085 \times 100 \]
+\[ \text{Growth Rate} = 8.5\% \]
+
+Therefore, the growth rate in PMI's share price from 2012 to 2013 is 8.5%.",PM,178.19,"To calculate the growth rate in PMI's share price from 2012 to 2013, we can use the formula:
+
+\[ \text{Growth Rate} = \left( \frac{\text{Ending Value} - \text{Beginning Value}}{\text{Beginning Value}} \right) \times 100\% \]
+
+Plugging in the values:
+\[ \text{Growth Rate} = \left( \frac{108.50 - 100.00}{100.00} \right) \times 100\% \]
+\[ \text{Growth Rate} = \left( \frac{8.50}{100.00} \right) \times 100\% \]
+\[ \text{Growth Rate} = 0.085 \times 100\% \]
+\[ \text{Growth Rate} = 8.5\% \]
+
+Therefore, the growth rate in PMI's share price from 2012 to 2013 is 8.5%.",8.5,1,Match (numeric)
+Single_CDNS/2012/page_58.pdf-1_0,,what is the percentage difference in the number of shares to be issued if the stock price closes at $ 11 compared to if it closes at $ 20?,278.0,137.78,0,No match (diff 140.2200),0.48052024841308594,2277.78,0,No match (diff 1999.7800),1.2650554180145264,,<ANSWER>The percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is approximately 137.78%.</ANSWER>,"To calculate the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20, we first need to find the number of shares issued at each price point.
+
+At $11, 0.9 million shares would be issued.
+At $20, 21.4 million shares would be issued.
+
+The difference in the number of shares issued:
+21.4 - 0.9 = 20.5 million shares
+
+To find the percentage difference, we use the formula:
+Percentage Difference = (Difference / Initial Value) * 100
+
+Plugging in the values:
+Percentage Difference = (20.5 / 0.9) * 100
+Percentage Difference = 2277.78%
+
+Therefore, the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is 2277.78%.",CDNS,315.51,"To calculate the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20, we need to find the difference in the number of shares issued at $11 and $20, and then calculate the percentage difference.
+
+At $11, 0.9 million shares would be issued.
+At $20, 21.4 million shares would be issued.
+
+The difference in the number of shares issued:
+21.4 - 0.9 = 20.5 million shares
+
+Now, to calculate the percentage difference:
+Percentage Difference = (Difference / Initial Value) * 100
+Percentage Difference = (20.5 / 0.9) * 100
+
+<MATH>(20.5 / 0.9) * 100 = 2277.78</MATH>
+
+Therefore, the percentage difference in the number of shares to be issued if the stock price closes at $11 compared to if it closes at $20 is approximately 2277.78%.",2277.78,0,No match (diff 1999.7800)
+Single_AMT/2004/page_28.pdf-1_2,,for the quarter ended june 30 what was the percentage change in the share price from he lowest to the highest,43.8,44.32,1,Match (numeric),0.4132554531097412,43.74,1,Match (numeric),1.2007560729980469,\frac{4.87}{11.13} \times 100,<ANSWER>44.32%</ANSWER>,"To calculate the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price for June 30, 2004: $16.00
+Lowest price for June 30, 2004: $11.13
+
+Difference: $16.00 - $11.13 = $4.87
+
+Percentage change: (<MATH> \frac{4.87}{11.13} \times 100</MATH>)
+Percentage change: <ANSWER>43.74%</ANSWER>",AMT,211.86,"To calculate the percentage change in share price from the lowest to the highest for the quarter ended June 30, 2004, we first need to find the difference between the highest and lowest prices, then calculate the percentage change.
+
+Highest price for June 30, 2004: $16.00
+Lowest price for June 30, 2004: $11.13
+
+Difference = $16.00 - $11.13 = $4.87
+
+Percentage Change = (Difference / Lowest Price) * 100
+Percentage Change = ($4.87 / $11.13) * 100 = 43.73%
+
+Therefore, the percentage change in the share price from the lowest to the highest for the quarter ended June 30, 2004 was 43.73%.",43.73,1,Match (numeric)
+Single_VLO/2017/page_28.pdf-3_3,,by what percentage did the share price increase from october to november 2017?,5.3,5.25,1,Match (numeric),0.4019777774810791,2017.0,0,No match (diff 2011.7000),1.4524941444396973,,<ANSWER>5.25%</ANSWER>,"To calculate the percentage increase in share price from October to November 2017, we can use the formula:
+
+Percentage increase = ((New price - Old price) / Old price) * 100
+
+In this case:
+- Old price (October 2017) = $77.15
+- New price (November 2017) = $81.21
+
+Percentage increase = (($81.21 - $77.15) / $77.15) * 100
+Percentage increase = ($4.06 / $77.15) * 100
+Percentage increase = 0.0526 * 100
+Percentage increase = 5.26%
+
+Therefore, the share price increased by 5.26% from October to November 2017.",VLO,128.55,"To calculate the percentage increase in share price from October to November 2017, we need to find the difference in average price paid per share between November and October, divide that by the average price in October, and then multiply by 100 to get the percentage increase.
+
+Average price in November 2017 = $81.21
+Average price in October 2017 = $77.15
+
+Difference = $81.21 - $77.15 = $4.06
+
+Percentage increase = (<MATH> \frac{4.06}{77.15} </MATH>) * 100 = <ANSWER>5.26%</ANSWER>
+
+Therefore, the share price increased by 5.26% from October to November 2017.",5.26,1,Match (numeric)
+Single_IPG/2017/page_26.pdf-2_4,,what is the percentage decrease in average price per share from october to november?,8.92,4.57,0,No match (diff 4.3500),0.311474084854126,8.91,1,Match (numeric),1.1629228591918945,,<ANSWER>4.57%</ANSWER>,"To calculate the percentage decrease in average price per share from October to November, we first need to find the difference in average price per share between the two months:
+
+Average price per share in October = $20.74
+Average price per share in November = $18.89
+
+Difference = $20.74 - $18.89 = $1.85
+
+Next, we calculate the percentage decrease:
+
+Percentage decrease = (Difference / Average price per share in October) * 100
+Percentage decrease = ($1.85 / $20.74) * 100 = 8.91%
+
+Therefore, the percentage decrease in average price per share from October to November is 8.91%.",IPG,24.0,"To calculate the percentage decrease in average price per share from October to November, we first need to find the average price per share for each month.
+
+For October:
+Total value = 1231868 * $20.74 = $25,532,429.92
+
+For November:
+Total value = 1723139 * $18.89 = $32,570,234.71
+
+Now, we can calculate the percentage decrease:
+Percentage decrease = ((November average price - October average price) / October average price) * 100
+Percentage decrease = (($32,570,234.71 - $25,532,429.92) / $25,532,429.92) * 100
+Percentage decrease = ($7,037,804.79 / $25,532,429.92) * 100
+Percentage decrease ≈ 27.59%
+
+Therefore, the percentage decrease in average price per share from October to November is approximately 27.59%.",27.59,0,No match (diff 18.6700)
+Single_MRO/2008/page_142.pdf-1_0,,by what percentage did the company's weighted average exercise price per share increase from 2006 to 2008?,36.7,2008.0,0,No match (diff 1971.3000),0.6307272911071777,2008.0,0,No match (diff 1971.3000),1.3481543064117432,,<ANSWER>The company's weighted average exercise price per share increased by 36.6% from 2006 to 2008.</ANSWER>,"To calculate the percentage increase in the weighted average exercise price per share from 2006 to 2008, we use the formula:
+
+Percentage Increase = ((New Value - Old Value) / Old Value) * 100
+
+Plugging in the values:
+Old Value (2006) = $37.84
+New Value (2008) = $51.74
+
+Percentage Increase = (($51.74 - $37.84) / $37.84) * 100
+Percentage Increase = ($13.90 / $37.84) * 100
+Percentage Increase = 0.367 * 100
+Percentage Increase = 36.7%
+
+Therefore, the company's weighted average exercise price per share increased by 36.7% from 2006 to 2008.",MRO,28.55,"To calculate the percentage increase in the company's weighted average exercise price per share from 2006 to 2008, we need to subtract the exercise price in 2006 from the exercise price in 2008, divide by the exercise price in 2006, and then multiply by 100 to get the percentage increase.
+
+Exercise price in 2006 = $37.84
+Exercise price in 2008 = $51.74
+
+Percentage increase = (($51.74 - $37.84) / $37.84) * 100
+Percentage increase = ($13.90 / $37.84) * 100
+Percentage increase = 0.367 * 100
+Percentage increase = 36.7%
+
+Therefore, the company's weighted average exercise price per share increased by 36.7% from 2006 to 2008.",2008.0,0,No match (diff 1971.3000)
+Single_RCL/2009/page_90.pdf-4_0,,what was the percent of the increase in the expected stock price volatility from 2008 to 2009,75.2,23.6,0,No match (diff 51.6000),0.3912227153778076,75.16,1,Match (numeric),1.2514452934265137,,<ANSWER>23.6%</ANSWER>,"The percent increase in the expected stock price volatility from 2008 to 2009 can be calculated using the formula:
+
+Percent Increase = ((New Value - Old Value) / Old Value) * 100
+
+Plugging in the values:
+New Value (2009) = 55.0%
+Old Value (2008) = 31.4%
+
+Percent Increase = ((55.0 - 31.4) / 31.4) * 100
+Percent Increase = (23.6 / 31.4) * 100
+Percent Increase = 0.7516 * 100
+Percent Increase = 75.16%
+
+Therefore, the percent increase in the expected stock price volatility from 2008 to 2009 was 75.16%.",RCL,240.12,"To calculate the percent increase in expected stock price volatility from 2008 to 2009, we first need to find the difference in volatility between the two years and then calculate the percentage increase.
+
+The expected stock price volatility in 2008 was 31.4% and in 2009 it was 55.0%.
+
+The difference in volatility = 55.0% - 31.4% = 23.6%
+
+To find the percent increase:
+Percent Increase = (Difference / Initial Value) * 100
+Percent Increase = (23.6% / 31.4%) * 100
+Percent Increase = 0.7516 * 100
+Percent Increase = 75.16%
+
+Therefore, the percent increase in expected stock price volatility from 2008 to 2009 was 75.16%.",75.16,1,Match (numeric)
