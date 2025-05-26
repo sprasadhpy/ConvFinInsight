@@ -658,7 +658,145 @@ Answer:
          style="max-width: 60%; height: auto; border: 1px solid #ccc; border-radius: 8px; padding: 4px;">
   </section>
 </div>
+<section class="system-details">
+  <div class="container">
+    <h2>System Configuration and Execution Profile</h2>
 
+    <h3>1. Hardware Configuration</h3>
+    <ul>
+      <li><strong>Instance Type:</strong> Cloud-based VM (Linux, x86_64)</li>
+      <li><strong>GPU:</strong> NVIDIA A100 (40GB VRAM, CUDA-enabled)</li>
+      <li><strong>CPU:</strong> 24 vCPUs (Intel Xeon equivalent)</li>
+      <li><strong>Memory:</strong> 85GB system RAM</li>
+      <li><strong>Python:</strong> Version 3.10.x (via venv)</li>
+      <li><strong>Execution:</strong> Conducted locally for data preprocessing and orchestration; model inference executed via OpenAI API</li>
+    </ul>
+
+    <h3>2. Language Model & API Configuration</h3>
+    <ul>
+      <li><strong>Model:</strong> gpt-3.5-turbo</li>
+      <li><strong>Provider:</strong> OpenAI</li>
+      <li><strong>Temperature:</strong> 0.2 (to reduce output variance)</li>
+      <li><strong>Retries/Timeouts:</strong> Standard OpenAI retry policy (3 retries, exponential backoff)</li>
+      <li><strong>Deployment:</strong> Sequential API calls over 200 selected QA samples with five prompting paradigms</li>
+    </ul>
+
+    <h3>3. Tokenization and Usage Metrics</h3>
+    <ul>
+      <li><strong>Total Input Tokens:</strong> 2.7 million+</li>
+      <li><strong>Total Output Tokens:</strong> 320,000+</li>
+      <li><strong>Mean Tokens per Call:</strong> Input ~1800, Output ~250</li>
+      <li><strong>Cost Estimation:</strong> Calculated per prompt (see below); full trace available via LangSmith logs</li>
+      <li><strong>Monitoring:</strong> LangChain + LangSmith dashboards for trace tracking, token analysis, and latency logs</li>
+    </ul>
+
+    <h3>4. Latency Metrics (LangSmith)</h3>
+    <ul>
+      <li><strong>Total LLM Calls:</strong> 3,200+</li>
+      <li><strong>P50 Latency:</strong> 1.8–2.0 seconds</li>
+      <li><strong>P99 Latency:</strong> ~5.5 seconds</li>
+      <li><strong>Batch Mode:</strong> Disabled – all queries evaluated independently for faithful attribution</li>
+      <li><strong>Errors:</strong> None recorded across test runs</li>
+    </ul>
+
+    <h3>5. Prompting Strategies Evaluated</h3>
+    <ul>
+      <li><strong>ExplicitCoT:</strong> Step-by-step structured reasoning</li>
+      <li><strong>ReflectionCoT:</strong> Self-reflective logic evaluation</li>
+      <li><strong>Scratchpad:</strong> Intermediate variable thinking trace</li>
+      <li><strong>PoT (Program-of-Thought):</strong> Symbolic + numeric calculation via XML markers</li>
+      <li><strong>EEDP:</strong> Explicit Decomposition into Sub-Problems</li>
+    </ul>
+
+    <h3>6. QA Sample Evaluation</h3>
+    <ul>
+      <li><strong>Dataset:</strong> ConvFinQA (train_turn.json)</li>
+      <li><strong>Sample Size:</strong> 200 QA pairs (filtered for full question-answer availability)</li>
+      <li><strong>Accuracy Metric:</strong> Numeric agreement within tolerance (±3% relative, ±0.05 absolute)</li>
+      <li><strong>Per Strategy Logging:</strong> Accuracy, predicted output, gold target, intermediate math, latency</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cost-latency">
+  <div class="container">
+    <h2>Prompting Strategy Efficiency</h2>
+    <p>This section compares the token cost and response latency for different prompting paradigms applied over the ConvFinQA dataset.</p>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Prompting Strategy</th>
+          <th>LLM Input (truncated)</th>
+          <th>Cost (USD)</th>
+          <th>Latency (seconds)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ExplicitCoT</td>
+          <td>Break the question down into steps...</td>
+          <td>$0.0009</td>
+          <td>0.99</td>
+        </tr>
+        <tr>
+          <td>ExplicitCoT</td>
+          <td>Break the question down into steps...</td>
+          <td>$0.00077</td>
+          <td>2.37</td>
+        </tr>
+        <tr>
+          <td>ReflectionCoT</td>
+          <td>Think through the problem carefully...</td>
+          <td>$0.00192</td>
+          <td>1.71</td>
+        </tr>
+        <tr>
+          <td>ReflectionCoT</td>
+          <td>Think through the problem carefully...</td>
+          <td>$0.00087</td>
+          <td>2.88</td>
+        </tr>
+        <tr>
+          <td>Scratchpad</td>
+          <td>Use the scratchpad below to jot down...</td>
+          <td>$0.00112</td>
+          <td>1.85</td>
+        </tr>
+        <tr>
+          <td>Scratchpad</td>
+          <td>Use the scratchpad below to jot down...</td>
+          <td>$0.00073</td>
+          <td>2.48</td>
+        </tr>
+        <tr>
+          <td>PoT</td>
+          <td>&lt;MATH&gt; text{...} &lt;/MATH&gt;</td>
+          <td>$0.0063</td>
+          <td>9.03</td>
+        </tr>
+        <tr>
+          <td>EEDP</td>
+          <td>You are a financial assistant...</td>
+          <td>$0.00118</td>
+          <td>1.64</td>
+        </tr>
+        <tr>
+          <td>EEDP</td>
+          <td>You are a financial assistant...</td>
+          <td>$0.00107</td>
+          <td>2.31</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top: 20px;">
+      <strong>Observation:</strong> The Program-of-Thought (PoT) strategy incurs higher token usage and latency due to XML formatting and symbolic evaluations. Scratchpad and EEDP show efficient trade-offs between cost and reasoning completeness.
+    </p>
+  </div>
+</section>
+
+    
     
     <section class="demo">
         <div class="container">
