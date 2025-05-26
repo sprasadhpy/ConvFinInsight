@@ -26,6 +26,9 @@ header p {
 .container {
     width: 80%;
     margin: 0 auto;
+    background-color: #000000; /* Black background */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .about {
