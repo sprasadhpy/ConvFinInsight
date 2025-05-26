@@ -497,36 +497,45 @@ Answer:
 </p>
 
     </div>
- <div class="container"> 
-<section>
-  <h2>Experiment4: Extended Reasoning with the “Wait...” Scaffolding Technique</h2>
-  <p>
-    Inspired by the <em>"s1: Simple Test-Time Scaling"</em> paper (<a href="https://arxiv.org/abs/2501.19393" target="_blank">arXiv:2501.19393</a>), 
-    which demonstrated how prompting with a simple “Wait...” token can significantly enhance reasoning in large language models, 
-    I applied a similar scaffolding method to my financial QA system built on the ConvFinQA dataset. 
-    In this setup, the model was instructed to begin responses with “Wait...” and enclose final answers within 
-    <code>&lt;ANSWER&gt;</code> tags to encourage structured, step-by-step reasoning. 
-    This intervention resulted in a <strong>notable accuracy improvement from 48.00% to 56.50%</strong>, 
-    marking an <strong>8.50% gain</strong> through self-reflective retries.
-  </p>
-  <p>
-    But, this performance still lagged behind the <strong>67.5% accuracy</strong> achieved by a dedicated reasoning agent. 
-    One likely reason for this gap is that the “Wait...” prompt enforces general deliberation but doesn’t instill 
-    domain-specific financial reasoning or leverage external tools which the agent was explicitly trained to use. 
-    In addition, discrepancies in question sets or difficulty levels between experiments may have influenced the outcome 
-    making direct comparisons imperfect. These results suggest that while lightweight test-time scaffolding improves robustness, 
-    its gains are bounded by task complexity and the model's reasoning priors.<p>
-    The evaluation results are saved in the file: <a href="langchain_self_eval_waittoken.csv" download><code>langchain_self_eval_waittoken.csv</code></a>.
-  </p>
-  </p>
-</div>
-  <h2>Accuracy Comparison Self reflection vs Scaffolding technique</h2>
-  <p>
-    The bar chart below compares the performance of various strategies including LLM-only, LLM with calculator, self-evaluating agents, and the "Wait..." scaffolding method.
-  </p>
-  <img src="assets/Experiment4.png" alt="Accuracy Comparison Graph" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; padding: 4px;">
+<div class="container"> 
+  <section>
+    <h2>Experiment 4: Extended Reasoning with the “Wait...” Scaffolding Technique</h2>
+    <p>
+      Inspired by the <em>"s1: Simple Test-Time Scaling"</em> paper 
+      (<a href="https://arxiv.org/abs/2501.19393" target="_blank">arXiv:2501.19393</a>), 
+      which demonstrated how prompting with a simple “Wait...” token can significantly enhance reasoning in large language models, 
+      I applied a similar scaffolding method to my financial QA system built on the ConvFinQA dataset. 
+      In this setup, the model was instructed to begin responses with “Wait...” and enclose final answers within 
+      <code>&lt;ANSWER&gt;</code> tags to encourage structured, step-by-step reasoning. 
+      This intervention resulted in a <strong>notable accuracy improvement from 48.00% to 56.50%</strong>, 
+      marking an <strong>8.50% gain</strong> through self-reflective retries.
+    </p>
 
-</section>
+    <p>
+      However, this performance still lagged behind the <strong>67.5% accuracy</strong> achieved by a dedicated reasoning agent. 
+      One likely reason for this gap is that the “Wait...” prompt enforces general deliberation but doesn’t instill 
+      domain-specific financial reasoning or leverage external tools, which the agent was explicitly trained to use. 
+      Additionally, discrepancies in question sets or difficulty levels between experiments may have influenced the outcome, 
+      making direct comparisons imperfect. These results suggest that while lightweight test-time scaffolding improves robustness, 
+      its gains are bounded by task complexity and the model's reasoning priors.
+    </p>
+
+    <p>
+      The evaluation results are saved in the file: 
+      <a href="langchain_self_eval_waittoken.csv" download>
+        <code>langchain_self_eval_waittoken.csv</code>
+      </a>.
+    </p>
+
+    <h2>Accuracy Comparison: Self-Reflection vs Scaffolding Technique</h2>
+    <p>
+      The bar chart below compares the performance of various strategies, including LLM-only, LLM with calculator, 
+      self-evaluating agents, and the "Wait..." scaffolding method.
+    </p>
+    <img src="assets/Experiment4.png" alt="Accuracy Comparison Graph" 
+         style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; padding: 4px;">
+  </section>
+</div>
 
 
 
