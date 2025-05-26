@@ -376,14 +376,14 @@ def evaluate_expression(expr):
   </div>
 </section>
 
-      <section class="prompt-strategies">
+<section class="prompt-strategies">
   <div class="container">
-    <h2>Experiment 2: Prompting Strategies explored</h2>
-    <p>Below are the five distinct prompting strategies evaluated on the ConvFinQA dataset:</p>
+    <h2>Experiment 2: Prompting Strategies Explored</h2>
+    <p>We evaluated five distinct prompting strategies on the ConvFinQA dataset:</p>
 
     <h3>1. ExplicitCoT (Chain-of-Thought)</h3>
     <p>
-      This method guides the model to reason step-by-step before answering and thereby improving multi-hop question accuracy.  
+      This strategy guides the model to reason step-by-step before answering, thereby improving multi-hop question accuracy.  
       Introduced in <a href="https://arxiv.org/abs/2201.11903" target="_blank">Wei et al., 2022</a> (Chain of Thought Prompting).
     </p>
     <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
@@ -403,7 +403,7 @@ Answer:
 
     <h3>2. ReflectionCoT</h3>
     <p>
-      Encourages the model to reflect and reason before committing to an answer and  helping correct early-stage reasoning.  
+      Encourages the model to reflect on its reasoning before committing to an answer, helping correct early-stage errors.  
       Based on <a href="https://arxiv.org/abs/2303.17651" target="_blank">Madaan et al., 2023</a> (Self-Refine).
     </p>
     <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
@@ -423,7 +423,7 @@ Answer:
 
     <h3>3. Scratchpad</h3>
     <p>
-      Provides space for the model to "think aloud" or record intermediate computations before giving the final output.  
+      Allows the model to "think aloud" by writing down intermediate computations before producing the final answer.  
       Inspired by <a href="https://arxiv.org/abs/2112.00114" target="_blank">Nye et al., 2021</a> (Scratchpads for Intermediate Computation).
     </p>
     <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
@@ -447,7 +447,7 @@ Answer:
       Proposed in <a href="https://arxiv.org/abs/2211.12588" target="_blank">Chen et al., 2022</a> (Program of Thoughts Prompting).
     </p>
     <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
-You are a financial assistant. For all math expressions, wrap them in &lt;MATH&gt;...&lt;/MATH&gt; 
+You are a financial assistant. For all math expressions, wrap them in &lt;MATH&gt;...&lt;/MATH&gt;, 
 and the final result in &lt;ANSWER&gt;...&lt;/ANSWER&gt;.
 
 Context:
@@ -464,11 +464,11 @@ Answer:
 
     <h3>5. EEDP (Explicit Expression Decomposition Prompting)</h3>
     <p>
-      Breaks down complex queries into sub-questions to improve modular reasoning and intermediate verification.  
+      Breaks down complex queries into sub-questions to enable modular reasoning and verification of intermediate steps.  
       Inspired by <a href="https://arxiv.org/abs/2210.02406" target="_blank">Khot et al., 2022</a> (Decomposed Prompting).
     </p>
     <pre style="background:#f9f9f9; padding:12px; border:1px solid #ccc; border-radius:6px;">
-Break the question into sub-questions answer each part then combine results to answer the original question.
+Break the question into sub-questions, answer each part, and then combine the results to answer the original question.
 
 Context:
 [pre_text]
@@ -482,17 +482,22 @@ Question: [question]
 Answer:
     </pre>
   </div>
-<div class="container" style="text-align: center; padding: 20px;">
-  <h2>Figure 3: Types of prompting strategies</h2>
-  <p style="font-size: 14px; color: #444;">
-    This figure compares the performance of different types of prompting strategies on ConvFinQA.<p><strong>LLM + Calculator</strong> (63%) and <strong>PoT</strong> (61.5%) perform best, showing that external tools and structured reasoning significantly boost accuracy.</p>
-    Mid-tier methods like <strong>ReflectionCoT</strong>, <strong>ExplicitCoT</strong>, and <strong>Scratchpad</strong> (54–56%) offer modest gains, but lack the effectiveness of tool-augmented or structured approaches. </p>
-  <div style="text-align: center;">
-    <img src="Experiment2.png" alt="Accuracy Comparison of Prompting Strategies"
-         style="width: 70%; max-width: 600px; border: 1px solid #ccc; border-radius: 8px; 
-         box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+
+  <div class="container" style="text-align: center; padding: 20px;">
+    <h2>Figure 3: Comparison of Prompting Strategies</h2>
+    <p style="font-size: 14px; color: #444;">
+      This figure compares the performance of various prompting strategies on ConvFinQA.<br />
+      <strong>LLM + Calculator</strong> (63%) and <strong>PoT</strong> (61.5%) perform best, demonstrating that external tools and structured reasoning significantly boost accuracy.<br />
+      Mid-tier strategies like <strong>ReflectionCoT</strong>, <strong>ExplicitCoT</strong>, and <strong>Scratchpad</strong> (54–56%) offer modest improvements, but fall short of the gains achieved by tool-augmented or symbolic approaches.
+    </p>
+    <div style="text-align: center;">
+      <img src="Experiment2.png" alt="Accuracy Comparison of Prompting Strategies"
+           style="width: 70%; max-width: 600px; border: 1px solid #ccc; border-radius: 8px; 
+           box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+    </div>
   </div>
-</div>
+</section>
+
 
 
     <div class="container"> 
