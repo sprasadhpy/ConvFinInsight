@@ -478,7 +478,7 @@ Answer:
     <div class="container"> 
     <h2>Experiment3: Self-Reflective Evaluation </h2>
         <p>
-  We implement a <strong>self-reflective evaluation loop</strong> using <strong>GPT-3.5 Turbo</strong> to enhance its reasoning fidelity on complex financial QA tasks. 
+       We implement a <strong>self-reflective evaluation loop</strong> using <strong>GPT-3.5 Turbo</strong> to enhance its reasoning fidelity on complex financial QA tasks. 
             The model is queried via LangChain’s <code>ChatOpenAI</code> interface using a structured prompt format that supports symbolic reasoning through <code>&lt;MATH&gt;</code> and <code>&lt;ANSWER&gt;</code> tags. After generating an initial answer it is compared against the ground truth using numerical thresholds (3% relative, 0.05 absolute). 
             If incorrect then the agent is prompted to critique its own reasoning and this reflection is incorporated into a follow up prompt to encourage correction. 
             This creates a lightweight feedback loop that enables self-improvement without human intervention. 
@@ -497,6 +497,28 @@ Answer:
 </p>
 
     </div>
+ <div class="container"> 
+<section>
+  <h2>Extended Reasoning with the “Wait...” Scaffolding Technique</h2>
+  <p>
+    Inspired by the <em>"s1: Simple Test-Time Scaling"</em> paper (<a href="https://arxiv.org/abs/2501.19393" target="_blank">arXiv:2501.19393</a>), 
+    which demonstrated how prompting with a simple “Wait...” token can significantly enhance reasoning in large language models, 
+    I applied a similar scaffolding method to my financial QA system built on the ConvFinQA dataset. 
+    In this setup, the model was instructed to begin responses with “Wait...” and enclose final answers within 
+    <code>&lt;ANSWER&gt;</code> tags to encourage structured, step-by-step reasoning. 
+    This intervention resulted in a <strong>notable accuracy improvement from 48.00% to 56.50%</strong>, 
+    marking an <strong>8.50% gain</strong> through self-reflective retries.
+  </p>
+  <p>
+    But, this performance still lagged behind the <strong>67.5% accuracy</strong> achieved by a dedicated reasoning agent. 
+    One likely reason for this gap is that the “Wait...” prompt enforces general deliberation but doesn’t instill 
+    domain-specific financial reasoning or leverage external tools which the agent was explicitly trained to use. 
+    In addition, discrepancies in question sets or difficulty levels between experiments may have influenced the outcome 
+    making direct comparisons imperfect. These results suggest that while lightweight test-time scaffolding improves robustness, 
+    its gains are bounded by task complexity and the model's reasoning priors.
+  </p>
+</div>
+</section>
 
 
 
