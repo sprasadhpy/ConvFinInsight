@@ -721,7 +721,7 @@ Answer:
     <p> evaluation pipeline integrates agentic reasoning and robust validation through a series of symbolic and semantic <em>guardrails</em> designed to ensure consistency, safety, and interpretability in financial QA tasks. Built on top of LangChain-augmented GPT-3.5 Turbo (temperature 0.2) with LangSmith for granular trace logging the system begins by filtering each input turn through a guardrail suite that checks for the presence of a valid question, answer, and structured reasoning steps (<code>qa.steps</code> or fallback reasoning). Additional checks are performed for percentage-based answers to enforce division steps in the logic chain and also, raw reasoning strings are screened for structural coherence (presence of symbols like <code>→</code> and function-like notation). Every validated example is then passed through two prompt paths: one using a vanilla LLM query and another leveraging calculator-style prompting with <code>&lt;MATH&gt;</code> and <code>&lt;ANSWER&gt;</code> tags. Model outputs are parsed then numerically evaluated, and scored against ground-truth answers using flexible absolute (0.05) and relative (3%) tolerances. In this specific run all 200 sampled examples passed the guardrails resulting in a 0% rejection rate which is a strong signal of dataset integrity and modeling readiness.</p>
       <br>
       <p>
-      <h2></h2><strong>Figure 9:</strong> Multi-layered guardrail strategy implemented in our pipeline. Inspired by <a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf" target="_blank">OpenAI's Practical Guide to Building Agents</a></h2>
+      <h2><strong>Figure 9:</strong> Multi-layered guardrail strategy implemented in our pipeline. Inspired by <a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf" target="_blank">OpenAI's Practical Guide to Building Agents</a></h2>
     </p>
     <img src="guardrails.png" alt="Guardrails Strategy Diagram" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;" />
   </div>
@@ -731,16 +731,18 @@ Answer:
     
 <section id="future-experiments" style="margin-top: 2em;">
      <div class="container">
-  <h2>Future Experiments: Compression-Aware Optimization, Agentic Self-Awareness </h2>
+  <h2>Future Experiments: Compression-Aware Optimization, Agentic Self-Awareness, Enhancing Temporal Recall with Episodic Memory </h2>
   <p>
     Given limited computational resources we are exploring model compression as outlined in 
     <a href="https://arxiv.org/abs/2504.04342" target="_blank">  <em>"Compression Laws for Large Language Models"</em> (Sengupta et al., 2025)
     </a>. While compression increases cross-entropy loss quadratically, the drop in downstream accuracy is often linear. We plan to combine compression with prompt tuning and retrieval strategies to mitigate performance loss and thereby aiming to make the system both accurate and cost-efficient.
     Inspired by the  <a href="https://arxiv.org/abs/2504.03553" target="_blank">
       <em>"Agentic Knowledgeable Self-awareness"</em> (Qiao et al., 2025) </a> framework we plan to enhance ConvFinBot’s reasoning control by integrating situational self-awareness. we aim to enable the agent to assess whether it 
-      possesses sufficient internal knowledge to answer a financial query, or whether it should defer to external retrieval (e.g., RAG or API-based lookups). 
-      By tagging internal reasoning traces with fast, slow, or knowledgeable thinking markers we can make the system can dynamically adjust its inference path—reducing unnecessary external calls and improving response efficiency. 
-      This self-aware control loop not only supports more cost-effective inference but also aligns with our goal of building a resource-efficient and  high-fidelity financial assistant.
+      possesses sufficient internal knowledge to answer a financial query or whether it should defer to external retrieval (e.g., RAG or API-based lookups). 
+      By tagging internal reasoning traces with fast, slow, or knowledgeable thinking markers we can make the system can dynamically adjust its inference path and thereby reducing unnecessary external calls and improving response efficiency. 
+      This self-aware control loop not only supports more cost-effective inference but also aligns with our goal of building a resource-efficient and  high-fidelity financial assistant.During development ConvFinBot occasionally exhibited memory limitations and in multi-turn dialogues where it failed to recall previously mentioned financial facts (e.g., a company’s share price). This impairs coherent reasoning across turns and undermines trust in the assistant. Drawing from 
+      <a href="https://arxiv.org/abs/2502.06975" target="_blank"> <em>"Episodic Memory is the Missing Piece for Long-Term LLM Agents"</em> (Pink et al., 2025) </a>, I propose integrating an episodic memory module to persist and retrieve salient interaction history. Episodic memory’s properties are single-shot learning, long-term retention, and contextual linking which align well with the requirements of financial dialogue where past numerical facts and reasoning steps are essential for continuity. As agentic engineers, I see this as a crucial step toward building a more grounded and temporally-aware assistant that adapts over time without reprocessing the entire dialogue history.
+  </p>
   </p>
 </section>
  
