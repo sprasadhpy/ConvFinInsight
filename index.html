@@ -375,7 +375,16 @@ def evaluate_expression(expr):
       and invokes the LLM with both prompt types. If a <code>&lt;MATH&gt;</code> expression is produced it is evaluated using Python’s <code>eval()</code> in a restricted context. 
       Predicted answers are extracted, matched against gold labels using relative (3%) and absolute (0.05) tolerances, 
       and logged alongside latency, conversation type, and trace metadata.<p> Final traces with results are exported to a txt file (<code>Experiment1</code>) for accuracy analysis across conversation styles and reasoning modes.
-    </p>
+      <p>
+    In the benchmark study 
+    <a href="https://arxiv.org/abs/2402.11194" target="_blank">
+      <em>“Evaluating LLMs’ Mathematical Reasoning in Financial Document Question Answering”</em> (Srivastava et al., 2024)
+    </a>, GPT-3.5-Turbo achieved a peak accuracy of 61.75% with the EEDP prompting strategy outperforming alternatives like Direct (37.62%), CoT (48.33%), PoT (61.19%), and Decomposers (10.50%). 
+     From an agentic engineering perspective, our pipeline—grounded in Faithful Chain-of-Thought reasoning and augmented with tool-use—surpassed this benchmark. 
+          Without relying heavily on prompt engineering llm consistently maintained high reasoning fidelity across multi-hop, numerically intensive queries. 
+          This validates our baseline design philosophy: integrating LLMs with an symbolic reasoning  modules can deliver more accurate and transparent decision-making in real-world financial QA scenarios.
+  </p>
+      </p>
 
     <p>
   <strong>Download full trace output:</strong><br />
