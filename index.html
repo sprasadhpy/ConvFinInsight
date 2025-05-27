@@ -702,6 +702,11 @@ Answer:
   <img src="RAG.png" alt="ConvFinQA RAG Architecture" style="max-width: 100%; height: auto; border: 1px solid #ccc; padding: 10px; border-radius: 8px;">
 </div>
 
+<div class="container" style="text-align: center; margin-top: 2rem;">
+  <h2>Figure 8:Accuracy Comparison Using Semantic, Symbolic Prompts, and Retrieval Methods</h2>
+  <img src="RAG2.png" alt="Accuracy Comparison Using Semantic, Symbolic Prompts, and Retrieval Methods" style="max-width: 100%; height: auto; border: 1px solid #ccc; padding: 10px; border-radius: 8px;">
+</div>
+
   </section>
 </div>
 
@@ -712,7 +717,7 @@ Answer:
     <p> evaluation pipeline integrates agentic reasoning and robust validation through a series of symbolic and semantic <em>guardrails</em> designed to ensure consistency, safety, and interpretability in financial QA tasks. Built on top of LangChain-augmented GPT-3.5 Turbo (temperature 0.2) with LangSmith for granular trace logging the system begins by filtering each input turn through a guardrail suite that checks for the presence of a valid question, answer, and structured reasoning steps (<code>qa.steps</code> or fallback reasoning). Additional checks are performed for percentage-based answers to enforce division steps in the logic chain and also, raw reasoning strings are screened for structural coherence (presence of symbols like <code>→</code> and function-like notation). Every validated example is then passed through two prompt paths: one using a vanilla LLM query and another leveraging calculator-style prompting with <code>&lt;MATH&gt;</code> and <code>&lt;ANSWER&gt;</code> tags. Model outputs are parsed then numerically evaluated, and scored against ground-truth answers using flexible absolute (0.05) and relative (3%) tolerances. In this specific run all 200 sampled examples passed the guardrails resulting in a 0% rejection rate which is a strong signal of dataset integrity and modeling readiness.</p>
       <br>
       <p>
-      <h2></h2><strong>Figure 8:</strong> Multi-layered guardrail strategy implemented in our pipeline. Inspired by <a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf" target="_blank">OpenAI's Practical Guide to Building Agents</a></h2>
+      <h2></h2><strong>Figure 9:</strong> Multi-layered guardrail strategy implemented in our pipeline. Inspired by <a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf" target="_blank">OpenAI's Practical Guide to Building Agents</a></h2>
     </p>
     <img src="guardrails.png" alt="Guardrails Strategy Diagram" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;" />
   </div>
