@@ -730,12 +730,22 @@ Answer:
 <br>
     
 <section id="future-experiments" style="margin-top: 2em;">
-  <h2>Future Experiments: Compression-Aware Optimization</h2>
+     <div class="container">
+  <h2>Future Experiments: Compression-Aware Optimization, Agentic Self-Awareness </h2>
   <p>
     Given limited computational resources we are exploring model compression as outlined in 
     <a href="https://arxiv.org/abs/2504.04342" target="_blank">  <em>"Compression Laws for Large Language Models"</em> (Sengupta et al., 2025)
     </a>. While compression increases cross-entropy loss quadratically, the drop in downstream accuracy is often linear. We plan to combine compression with prompt tuning and retrieval strategies to mitigate performance loss and thereby aiming to make the system both accurate and cost-efficient.
+    Inspired by the  <a href="https://arxiv.org/abs/2504.03553" target="_blank">
+      <em>"Agentic Knowledgeable Self-awareness"</em> (Qiao et al., 2025) </a> framework we plan to enhance ConvFinBot’s reasoning control by integrating situational self-awareness. we aim to enable the agent to assess whether it 
+      possesses sufficient internal knowledge to answer a financial query, or whether it should defer to external retrieval (e.g., RAG or API-based lookups). 
+      By tagging internal reasoning traces with fast, slow, or knowledgeable thinking markers we can make the system can dynamically adjust its inference path—reducing unnecessary external calls and improving response efficiency. 
+      This self-aware control loop not only supports more cost-effective inference but also aligns with our goal of building a resource-efficient and  high-fidelity financial assistant.
   </p>
+</section>
+ 
+  </p>
+     </div>
 </section>
 
 
