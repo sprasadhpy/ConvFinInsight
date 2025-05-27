@@ -735,6 +735,38 @@ Answer:
   </div>
 </section>
 
+<section class="experiment">
+  <div class="container">
+    <h2>Experiment9 : Qwen3-14B With SFT Finetuning</h2>
+    <p>
+      This experiment fine-tunes the <strong>Qwen3-14B</strong> model using supervised fine-tuning (SFT) on the <em>ConvFinQA</em> dataset to enhance financial question-answering performance. 
+        The model is efficiently loaded in 4-bit precision via the <code>unsloth</code> framework and trained with PEFT using LoRA on critical transformer modules such as <code>q_proj</code>, <code>v_proj</code>, and <code>o_proj</code>.
+        Each training example is constructed by embedding document context, tabular financial data, and a user query into a structured prompt, with model answers wrapped in <code>&lt;ANSWER&gt;</code> tags and intermediate expressions in <code>&lt;MATH&gt;</code> tags to encourage explicit reasoning.
+    </p>
+    <p>
+      The dataset is split 90-10 into training and testing sets with the training portion restricted to 1000 examples to enable rapid iteration. Training is conducted for 3 epochs with <code>bf16</code> precision, gradient accumulation, and a learning rate of 2e-5. Following the fine-tuning phase evaluation on the test set revealed a significant performance boost: model accuracy improved from <strong>48%</strong> to <strong>55.3%</strong>. 
+        This gain demonstrates that SFT effectively enhances the model's ability to interpret structured financial documents and generate reliable, interpretable answers.
+    </p>
+    <br>
+    <p>
+      <h2><strong>Figure 10:</strong> Accuracy comparison in Qwen models</h2>
+    </p>
+    <img src="QwenSFT.png" alt="SFT With Qwen" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;" />
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
 <br>
     
 <section id="future-experiments" style="margin-top: 2em;">
