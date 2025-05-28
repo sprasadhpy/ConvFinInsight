@@ -1,4 +1,6 @@
-# ConvFinInsight ConvFinInsigh is an LLM-powered financial reasoning framework built on top of the ConvFinQA dataset.  
+# ConvFinInsight 
+
+## ConvFinInsigh is an LLM-powered financial reasoning framework built on top of the ConvFinQA dataset.  
 It combines:
 
 -  Modular document parsing  
