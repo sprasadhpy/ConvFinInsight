@@ -8,14 +8,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from wordcloud import STOPWORDS
 
-# ensure loader.py exists in the same folder
 try:
     from data.loader import FILES, REPO_DIR
 except ImportError as e:
     raise ImportError("Cannot import from data.loader & make sure loader.py exists. it defines FILES, REPO_DIR.") from e
-
 sns.set(style="whitegrid")
-
 def safe_load_json(path):
     if not os.path.exists(path):
         raise FileNotFoundError(f"File not found: {path}")
@@ -31,7 +28,6 @@ def tokenize(text):
 def tokenize_filtered(text):
     stopwords = set(STOPWORDS)
     return [w for w in re.findall(r'\b[a-z]{3,}\b', text.lower()) if w not in stopwords]
-
 def classify_question(q):
     q = q.lower()
     if any(kw in q for kw in ["percent", "percentage", "rate", "ratio"]):
@@ -60,17 +56,13 @@ def compute_stats(data):
         dialogue = annotation.get("dialogue_break", [])
         total_questions += len(dialogue)
         total_question_length += sum(len(tokenize(q)) for q in dialogue)
-
         text = conv.get("pre_text", []) + conv.get("post_text", [])
         total_sentences += sum(t.count('.') + t.count('!') + t.count('?') for t in text)
-
         tokens = tokenize(" ".join(text))
         vocab.update(tokens)
         tokens_all_inputs.append(len(tokens))
-
         table = conv.get("table", [])
         total_table_rows += max(len(table) - 1, 0)
-
         fname = conv.get("filename", "")
         if '/' in fname:
             report_pages.add(fname)
@@ -104,10 +96,8 @@ if not all_stats:
     raise RuntimeError("No valid data files loaded. Aborting.")
 
 df_all = pd.DataFrame(all_stats).T.reset_index().rename(columns={"index": "Dataset"})
-
 train_path = os.path.join(REPO_DIR, FILES["Train Dialogues"])
 train_data = safe_load_json(train_path)
-
 dependency_distances = []
 for convo in train_data:
     turn_programs = convo.get("annotation", {}).get("turn_program", [])
@@ -115,7 +105,6 @@ for convo in train_data:
         refs = re.findall(r"#(\d+)", prog)
         distances = [i - int(ref) for ref in refs if int(ref) < i]
         dependency_distances.append(max(distances) if distances else 0)
-
 rows = []
 for sample in train_data:
     steps = sample.get("qa", {}).get("steps", [])
@@ -142,18 +131,15 @@ stock_keywords = {"stock", "market", "equity", "share", "price", "volume", "tick
 finance_keywords = {"revenue", "expense", "profit", "debt", "asset", "liability", "ebitda", "cash", "flow", "balance", "income", "net", "loss", "operation", "growth"}
 stock_count = sum(t in stock_keywords for t in all_tokens)
 finance_count = sum(t in finance_keywords for t in all_tokens)
-
 qtype_counts = pd.Series([
     classify_question(sample.get("qa", {}).get("question", ""))
     for sample in train_data
 ]).value_counts()
-
 operator_counter = Counter()
 for sample in train_data:
     for step in sample.get("qa", {}).get("steps", []):
         operator_counter[step.get("op")] += 1
 operator_freq = pd.Series(operator_counter).sort_values(ascending=False)
-
 company_year = []
 for sample in train_data:
     fname = sample.get("filename", "")
@@ -173,7 +159,6 @@ for sample in train_data:
         if unit in answer:
             unit_counter[unit] += 1
 unit_freq = pd.Series(unit_counter).sort_values(ascending=False)
-
 top10_companies = cy_df["Company"].value_counts().nlargest(10)
 
 fig, axs = plt.subplots(4, 2, figsize=(20, 20))
