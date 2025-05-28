@@ -17,15 +17,12 @@ FILES = {
     "Test Turns (Private)": os.path.join(DATA_DIR, "test_turn_private.json"),
 }
 
-
 def clone_repo():
     if not os.path.exists(REPO_DIR):
         print("Cloning ConvFinQA repository...")
         subprocess.run(["git", "clone", REPO_URL], check=True)
     else:
         print("Repository already exists.")
-
-
 def unzip_data():
     os.chdir(REPO_DIR)
     if os.path.exists(DATA_ZIP):
@@ -34,8 +31,6 @@ def unzip_data():
     else:
         print("data.zip not found.")
     os.chdir("..")
-
-
 def count_samples():
     print("\nDataset sample Counts:")
     for name, path in FILES.items():
@@ -43,8 +38,6 @@ def count_samples():
         with open(full_path, "r") as f:
             data = json.load(f)
         print(f"{name}: {len(data)} samples")
-
-
 def inspect_sample(sample_index=0):
     path = os.path.join(REPO_DIR, FILES["Train Dialogues"])
     with open(path, "r") as f:
@@ -56,24 +49,19 @@ def inspect_sample(sample_index=0):
     print(" QA Question:", sample["qa"]["question"])
     print(" Answer:", sample["qa"]["answer"])
     print("\n" + "=" * 80 + "\n")
-
     print(" Pre-Text (Excerpt):")
     for line in sample.get("pre_text", [])[:5]:
         print("-", line)
-
     print("\n Post-Text (Excerpt):")
     for line in sample.get("post_text", [])[:5]:
         print("-", line)
-
     print("\n Financial Table (from PDF page):")
     table_data = sample["table"]
     table_df = pd.DataFrame(table_data[1:], columns=table_data[0])
     print(table_df)
-
     print("\n Reasoning Steps:")
     for step in sample["qa"].get("steps", []):
         print(f"• {step['op']}({step['arg1']}, {step['arg2']}) → {step['res']}")
-
     annotation = sample.get("annotation", {})
     if "dialogue_break" in annotation:
         print("\n Dialogue Breakdown:")
