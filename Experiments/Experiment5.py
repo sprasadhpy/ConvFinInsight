@@ -25,7 +25,6 @@ required_vars = {
     "LANGCHAIN_ENDPOINT": LANGCHAIN_ENDPOINT,
     "FMP_API_KEY": FMP_API_KEY
 }
-
 missing = [k for k, v in required_vars.items() if not v]
 if missing:
     raise EnvironmentError(f"Missing required environment variables: {', '.join(missing)}")
@@ -65,15 +64,11 @@ def make_prompt(turn, use_math=False):
     return f"""{instructions}
 Context:
 {pre}
-
 Table:
 {table_text}
-
 {post}
-
 Question: {question}
 Answer:"""
-
 def extract_math_answer(text):
     match = re.search(r"<ANSWER>(.*?)</ANSWER>", text, re.DOTALL)
     return match.group(1).strip() if match else text.strip()
@@ -149,7 +144,6 @@ for i, turn in enumerate(sampled_data):
         fallback_number3 = extract_number(extract_math_answer(gen3))
         pred3 = calc_result3 if isinstance(calc_result3, (int, float)) else fallback_number3
         score3, msg3 = score_with_message(pred3, gold)
-
     results.append({
         "id": conv_id,
         "turn_ind": turn_ind,
@@ -173,7 +167,6 @@ for i, turn in enumerate(sampled_data):
         "score_calc_fmp": score3,
         "match_calc_fmp": msg3
     })
-
 Path("outputs").mkdir(exist_ok=True)
 df = pd.DataFrame(results)
 df.to_csv("outputs/stock_price_accuracy_analysis.csv", index=False)
