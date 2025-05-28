@@ -79,10 +79,7 @@ def score_with_message(pred: float, gold: float, rel_tol: float = 0.03, abs_tol:
     if err <= max(rel_tol * abs(gold), abs_tol):
         return 1, "Match (numeric)"
     return 0, f"No match (diff {err:.4f})"
-
-
 results = []
-
 for i, turn in enumerate(sampled_data):
     gold = extract_number(turn["qa"]["answer"])
     conv_type = turn.get("conv_type", "unknown")
@@ -117,10 +114,10 @@ for i, turn in enumerate(sampled_data):
         "gen_calc": gen2,
     })
     print(f"\nQ{i+1} [{conv_type}] {turn['qa']['question']}")
-    print("--- LLM Only ---")
+    print("LLM Only")
     print(f"Predicted:\n{gen1}\nExpected: {turn['qa']['answer']}")
     print(msg1)
-    print("--- LLM + Calculator ---")
+    print("LLM + Calculator")
     print(f"Predicted:\n{gen2}\nExpected: {turn['qa']['answer']}")
     print(msg2)
 df = pd.DataFrame(results)
@@ -128,5 +125,5 @@ for ctype in df["conv_type"].unique():
     subset = df[df["conv_type"] == ctype]
     acc1 = subset["score_llm"].mean() * 100
     acc2 = subset["score_calc"].mean() * 100
-    print(f"\nAccuracy for '{ctype}': LLM-only = {acc1:.1f}% | LLM+Calculator = {acc2:.1f}%")
+    print(f"\nAccuracy for '{ctype}': LLM only = {acc1:.1f}% | LLM+Calculator = {acc2:.1f}%")
 df.to_csv("method_comparison_classified_200.csv", index=False)
