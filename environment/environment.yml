@@ -1,1 +1,28 @@
 
+name: convfinqa
+channels:
+  - defaults
+  - conda-forge
+  - nvidia
+  - pytorch
+  - huggingface
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - sympy
+  - pip:
+      - langchain
+      - langchain-community
+      - langchain-openai
+      - langsmith
+      - transformers
+      - accelerate
+      - bitsandbytes
+      - unsloth
+      - xformers==0.0.29.post3
+      - peft
+      - trl==0.15.2
+      - triton
+      - cut_cross_entropy
+      - unsloth_zoo
