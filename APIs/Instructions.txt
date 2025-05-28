@@ -1,1 +1,26 @@
+1)env has following APIs.Please fill them
+
+OPENAI_API_KEY=
+LANGCHAIN_API_KEY=
+LANGCHAIN_PROJECT=
+LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+FMP_API_KEY=
+
+
+
+2) Install the package (add to requirements.txt or environment.yml as python-dotenv)
+
+   pip install python-dotenv
+
+3) Python Script for  Sanity check
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+openai_key = os.getenv("OPENAI_API_KEY")
+langchain_key = os.getenv("LANGCHAIN_API_KEY")
+fmp_key = os.getenv("FMP_API_KEY")
+
+print("OpenAI key prefix:", openai_key[:8]) 
 
