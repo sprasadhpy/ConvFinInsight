@@ -1,0 +1,8 @@
+
+# API Key Settings (Fill these in securely)
+
+OPENAI_API_KEY=
+LANGCHAIN_API_KEY=
+LANGCHAIN_PROJECT=ConvFinQA Tracing
+LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+FMP_API_KEY=
