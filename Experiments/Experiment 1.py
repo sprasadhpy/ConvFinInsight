@@ -1,3 +1,4 @@
+
 import os
 import json
 import re
@@ -11,11 +12,14 @@ from langsmith import traceable
 from langchain.callbacks.tracers import LangChainTracer
 from data.loader import load_data
 
+# I load API keys and other secrets from a .env file
 
 load_dotenv()
+#  track all LLM calls for debugging and review
 tracer = LangChainTracer()
 llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.2, callbacks=[tracer])
 @traceable(name="Ask ConvFinQA")
+# this is my main helper to call the model and get a clean string response
 def ask_gpt(prompt: str) -> str:
     if not isinstance(prompt, str):
         raise TypeError("Prompt must be a string.")
@@ -25,7 +29,7 @@ try:
     full_data = load_data("train_turn")
 except Exception as e:
     raise RuntimeError(f"Failed to load dataset: {e}")
-
+# I only want samples that actually have a question and an answer
 valid_data = [
     turn for turn in full_data
     if isinstance(turn, dict) and "qa" in turn and "question" in turn["qa"] and "answer" in turn["qa"]
@@ -33,6 +37,7 @@ valid_data = [
 print(f"Total entries: {len(full_data)} | Valid QA entries: {len(valid_data)}")
 
 N = 200
+# I’ll randomly sample N examples to run this eval 200 
 if len(valid_data) < N:
     raise ValueError(f"Insufficient valid QA data: only {len(valid_data)} available.")
 sampled_data = random.sample(valid_data, N)
@@ -45,6 +50,7 @@ def flatten_table(table: list) -> str:
     lines = [" | ".join(map(str, headers))]
     lines += [" | ".join(map(str, row)) for row in rows]
     return "\n".join(lines)
+# This builds my prompt depending on whether I want the LLM to show math
 def make_prompt(turn: dict, use_math: bool = False) -> str:
     if not isinstance(turn, dict):
         raise TypeError("Turn must be a dictionary.")
@@ -58,6 +64,7 @@ def make_prompt(turn: dict, use_math: bool = False) -> str:
     else:
         instructions += " Directly provide the final answer in <ANSWER>...</ANSWER>."
     return f"{instructions}\n\nContext:\n{pre}\n\nTable:\n{table_text}\n\n{post}\n\nQuestion: {question}\nAnswer:"
+# I pull out the <ANSWER> from the LLM's response or just return the raw text
 def extract_math_answer(text: str) -> str:
     match = re.search(r"<ANSWER>(.*?)</ANSWER>", text, re.DOTALL)
     return match.group(1).strip() if match else text.strip()
@@ -69,6 +76,7 @@ def evaluate_expression(expr: str) -> float:
         return eval(expr, {"__builtins__": {}})
     except Exception:
         return None
+# This lets me pull a number from a text blob I'll just take the last number
 def extract_number(text: str) -> float:
     nums = re.findall(r"-?\d+\.?\d*", text)
     return float(nums[-1]) if nums else None
@@ -89,6 +97,7 @@ for i, turn in enumerate(sampled_data):
     t1 = time.time()
     pred1 = extract_number(extract_math_answer(gen1))
     score1, msg1 = score_with_message(pred1, gold)
+    # Second try Let LLM use <MATH> if it wants
     prompt2 = make_prompt(turn, use_math=True)
     t2 = time.time()
     gen2 = ask_gpt(prompt2)
@@ -112,7 +121,7 @@ for i, turn in enumerate(sampled_data):
         "expr": expr,
         "gen_llm": gen1,
         "gen_calc": gen2,
-    })
+    }) #print out intermediate results
     print(f"\nQ{i+1} [{conv_type}] {turn['qa']['question']}")
     print("LLM Only")
     print(f"Predicted:\n{gen1}\nExpected: {turn['qa']['answer']}")
